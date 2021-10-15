@@ -1,279 +1,394 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>MAIDD: Montreal AI for Drug Discovery</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <head>
+    <title>MAIDD: Montreal AI for Drug Discovery</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
 
-		<style>
-table {
-  font-family:  sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+    <style>
+      table {
+        font-family: sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
 
-tr:nth-child(even) {
-  background-color: #ffffff;
-}
-</style>
-	</head>
-	<body class="is-preload">
+      tr:nth-child(even) {
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <span
+            class="logo"
+            onclick="window.location.href='https://mila.quebec/en/'"
+            ><img src="images/logo_mila.png" width="200" alt="" />
+          </span>
+          <span
+            class="logo"
+            onclick="window.location.href='https://valencediscovery.com/'"
+            ><img src="images/logo_valence.png" width="300" alt=""
+          /></span>
+        </div>
+        <h1><b>MAIDD: Montreal AI for Drug Discovery Reading Group</b></h1>
+        <p>
+          Organized by
+          <a href="https://linkedin.com/in/prudencio-tossou"
+            >Prudencio Tossou </a
+          >,
+          <a href="https://linkedin.com/in/therence-bois-23b99157/"
+            >Therence Bois</a
+          >, and
+          <a href="https://www.linkedin.com/in/dbeaini/">Dominique Beaini</a
+          ><br />
+        </p>
+        <p>
+          <a
+            href="https://umontreal.zoom.us/j/89608333677?pwd=TDRCVFdSZzVSWlNiazJXYlpzT2gzdz09"
+            >Zoom event link</a
+          >
+        </p>
+      </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="#intro" class="active">Introduction</a></li>
+          <li><a href="#latest">The latest talk</a></li>
+          <li><a href="#upcoming">Upcoming talks</a></li>
+          <li><a href="#past">Previous talks</a></li>
+          <li><a href="#subscribe">Keep In Touch</a></li>
+        </ul>
+      </nav>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<div style="display: flex; align-items: center; justify-content: center; ">
-							<span class="logo" onclick="window.location.href='https://mila.quebec/en/'"><img src="images/logo_mila.png" width="200" alt="" /> </span>
-							<span class="logo" onclick="window.location.href='https://valencediscovery.com/'"><img src="images/logo_valence.png" width="300" alt="" /></span>
-						</div>
-						<h1><b>MAIDD: Montreal AI for Drug Discovery Reading Group</b></h1>
-						<p>Organized by <a href="https://linkedin.com/in/prudencio-tossou">Prudencio Tossou </a>, <a href="https://linkedin.com/in/therence-bois-23b99157/">Therence Bois</a>, and <a href="https://www.linkedin.com/in/dbeaini/">Dominique Beaini</a><br/>
-						</p>
-						<p> <a href="https://umontreal.zoom.us/j/89608333677?pwd=TDRCVFdSZzVSWlNiazJXYlpzT2gzdz09">Zoom event link</a> </p>
-					</header>
+      <!-- Main -->
+      <div id="main">
+        <!-- Introduction -->
+        <section id="intro" class="main">
+          <div class="spotlight">
+            <div class="content">
+              <header
+                class="major"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <h2 class="width-100">Welcome</h2>
+              </header>
+              <p class="no-margin">
+                Welcome to this space dedicated to the MAIDD Reading Group
+                co-organized by
+                <a href="https://valencediscovery.com/">Valence Discovery</a>
+                and
+                <a href="https://mila.quebec/">Mila - Quebec AI Institute</a>.
+                Our aim is to offer a variety of talks and a discussion platform
+                to this diverse community: from open-source tools to advance in
+                traditional computational techniques to latest ML frameworks and
+                applications.
+                <br />
+                A wide range of drug discovery related topics will also be
+                covered in these talks to reflect the vibrant diversity of tools
+                and methodologies in the field and community:
+              </p>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#latest">The latest talk</a></li>
-							<li><a href="#upcoming">Upcoming talks</a></li>
-							<li><a href="#past">Previous talks</a></li>
-							<li><a href="#subscribe">Keep In Touch</a></li>
-						</ul>
-					</nav>
+              <ul class="alt">
+                <li>
+                  Applications of machine learning in computational molecular
+                  design
+                </li>
+                <li>
+                  Representation learning for small molecules and macromolecules
+                </li>
+                <li>Prediction of molecular properties and bioactivities</li>
+                <li>
+                  Machine learning for quantum chemistry and molecular dynamics
+                </li>
+                <li>Generative models for de novo molecular design</li>
+                <li>Active learning & uncertainty quantification</li>
+                <li>Multiparameter optimization and compound selection</li>
+                <li>Interpretable and explainable activity models</li>
+                <li>
+                  Reaction prediction, retrosynthesis, and synthesis planning
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-				<!-- Main -->
-					<div id="main">
+        <!-- Latest events -->
+        <section id="latest" class="main">
+          <header
+            class="major"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 0;
+            "
+          >
+            <h2 class="width-100">The Latest talk</h2>
+          </header>
+          <div
+            class="item"
+            style="display: flex; flex-flow: column; justify-content: left"
+          >
+            <div style="text-align: center">
+              <iframe
+                allowfullscreen=""
+                src="https://www.youtube.com/embed/51_K8RDVlXY"
+                height="200"
+              ></iframe>
+            </div>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major" style="display: flex; align-items: center; justify-content: center;">
-											<h2>Welcome</h2>
-										</header>
-										<p class="no-margin" >Welcome to this space dedicated to the MAIDD Reading Group co-organized by
-											<a href="https://valencediscovery.com/">Valence Discovery</a> and
-											<a href="https://mila.quebec/">Mila - Quebec AI Institute</a>.
-											Our aim is to offer a variety of talks and a discussion
-											platform to this diverse community: from open-source tools to advance in
-											traditional computational techniques to latest ML frameworks and applications.
-											<br>
-											A wide range of drug discovery related topics will also be covered in these
-											talks to reflect the vibrant diversity of tools and methodologies in the field and community:
+            <div style="margin-top:12px;margin-bottom:12px;">
+              Title: A very interesting work Materials:
+              <a href="link">slides</a>, <a href="link">recordings</a> <br />
+              Speaker:
+              <a href="https://www.linkedin.com/in/dbeaini/">Author1</a>
+              <a href="https://www.linkedin.com/in/prudencio-tossou/"
+                >Author2</a
+              >
+            </div>
+            <div>
+              <p class="no-margin" style="text-align: justify">
+                Abstract: In recent years, the Transformer architecture has
+                proven to be very successful in sequence processing, but its
+                application to other data structures, such as graphs, has
+                remained limited due to the difficulty of properly defining
+                positions. Here, we present the Spectral Attention Network
+                (SAN), which uses a learned positional encoding (LPE) that can
+                take advantage of the full Laplacian spectrum to learn the
+                position of each node in a given graph. This LPE is then added
+                to the node features of the graph and passed to a
+                fully-connected Transformer. By leveraging the full spectrum of
+                the Laplacian, our model is theoretically powerful in
+                distinguishing graphs, and can better detect similar
+                sub-structures from their resonance. Further, by fully
+                connecting the graph, the Transformer does not suffer from
+                over-squashing, an information bottleneck of most GNNs, and
+                enables better modeling of physical phenomenons such as heat
+                transfer and electric interaction. When tested empirically on a
+                set of 4 standard datasets, our model performs on par or better
+                than state-of-the-art GNNs, and outperforms any attention-based
+                model by a wide margin, becoming the first fully-connected
+                architecture to perform well on graph benchmarks.
+              </p>
+            </div>
+          </div>
+        </section>
 
-											<ul class="alt">
-												<li>Applications of machine learning in computational molecular design</li>
-												<li>Representation learning for small molecules and macromolecules</li>
-												<li>Prediction of molecular properties and bioactivities</li>
-												<li>Machine learning for quantum chemistry and molecular dynamics</li>
-												<li>Generative models for de novo molecular design</li>
-												<li>Active learning & uncertainty quantification</li>
-												<li>Multiparameter optimization and compound selection</li>
-												<li>Interpretable and explainable activity models</li>
-												<li>Reaction prediction, retrosynthesis, and synthesis planning</li>
+        <!-- Upcoming events -->
+        <section id="upcoming" class="main special">
+          <header class="major">
+            <h2>Upcoming talks</h2>
+          </header>
 
-											</ul>
-									</div>
-									
-								</div>
-							</section>
+          <p>
+            Please reach out
+            <a
+              href="prudencio@valencediscovery.com"
+              cc="therence@valencediscovery.com"
+              >here</a
+            >
+            if you want to present at those events.
+          </p>
 
-						<!-- Latest events -->
-							<section id="latest" class="main">
-								<header class="major" style="display: flex; align-items: center; justify-content: center;">
-									<h2>The Latest talk</h2>
-								</header>
-								<div class="item" style="display: flex; flex-flow: column; justify-content: left;">
-									<div style="text-align:center;">
-										<iframe allowfullscreen="" src="https://www.youtube.com/embed/51_K8RDVlXY" height="200" ></iframe>
-									</div>
+          <table>
+            <tr>
+              <th>Date (Eastern Time)</th>
+              <th>Presenter</th>
+              <th>Topic</th>
+              <th>Materials</th>
+            </tr>
 
-									<div >
-										Title: A very interesting work
-										Materials:  <a href="link">slides</a>, <a href="link">recordings</a> <br>
-										Speaker: <a href="https://www.linkedin.com/in/dbeaini/">Author1</a>
-										<a href="https://www.linkedin.com/in/prudencio-tossou/">Author2</a><br>
-										<p class="no-margin" style="text-align: justify">
-											Abstract:
-											In recent years, the Transformer architecture has proven to be very
-											successful in sequence processing, but its application to other data structures,
-											such as graphs, has remained limited due to the difficulty of properly defining positions.
-											Here, we present the Spectral Attention Network (SAN), which uses a learned positional
-											encoding (LPE) that can take advantage of the full Laplacian spectrum to learn the position
-											of each node in a given graph. This LPE is then added to the node features of the graph
-											and passed to a fully-connected Transformer. By leveraging the full spectrum of the
-											Laplacian, our model is theoretically powerful in distinguishing graphs, and can better
-											detect similar sub-structures from their resonance. Further, by fully connecting the graph,
-											the Transformer does not suffer from over-squashing, an information bottleneck of most GNNs,
-											and enables better modeling of physical phenomenons such as heat transfer and electric
-											interaction. When tested empirically on a set of 4 standard datasets, our model performs on
-											par or better than state-of-the-art GNNs, and outperforms any attention-based model by a
-											wide margin, becoming the first fully-connected architecture to perform well on graph benchmarks.
-										</p>
-									</div>
-								</div>
+            <tr>
+              <td>October 27, 2021 @ 3:00 PM</td>
+              <td>Organizers</td>
+              <td>First Talk title</td>
+              <td><a href="link">[paper]</a></td>
+            </tr>
 
-							</section>
+            <tr>
+              <td>November 3, 2021 @ 3:00 PM</td>
+              <td><a href="link">Author</a>, Institute</td>
+              <td>Tile</td>
+              <td>
+                <a href="link">[1]</a>
+                <a href="link">[2]</a>
+                <a href="link">[video]</a>
+              </td>
+            </tr>
+          </table>
+        </section>
 
+        <!-- Past events -->
+        <section id="past" class="main special">
+          <header class="major">
+            <h2>Previous talks</h2>
+          </header>
 
-						<!-- Upcoming events -->
-							<section id="upcoming" class="main special">
-								<header class="major">
-									<h2>Upcoming talks</h2>
-								</header>
+          <p>
+            Whenever possible, slides and videos will be available after each
+            talk.
+          </p>
 
-								<p>Please reach out <a href="prudencio@valencediscovery.com" cc="therence@valencediscovery.com">here</a> if you want to present at those events.</p>
+          <table>
+            <tr>
+              <th>Date (Eastern Time)</th>
+              <th>Presenter</th>
+              <th>Topic</th>
+              <th>Materials</th>
+            </tr>
 
-								<table>
-									<tr>
-										<th>Date (Eastern Time)</th>
-										<th>Presenter</th>
-										<th>Topic</th>
-										<th>Materials</th>
-									</tr>
+            <tr>
+              <td>October 27, 2021 @ 3:00 PM</td>
+              <td>Organizers</td>
+              <td>First Talk title</td>
+              <td><a href="link">[paper]</a></td>
+            </tr>
 
-									<tr>
-										<td>October 27, 2021 @ 3:00 PM</td>
-										<td>Organizers</td>
-										<td>First Talk title</td>
-										<td><a href="link">[paper]</a></td>
-									</tr>
+            <tr>
+              <td>November 3, 2021 @ 3:00 PM</td>
+              <td><a href="link">Author</a>, Institute</td>
+              <td>Tile</td>
+              <td>
+                <a href="link">[1]</a>
+                <a href="link">[2]</a>
+                <a href="link">[video]</a>
+              </td>
+            </tr>
+          </table>
+        </section>
 
-									<tr>
-										<td>November 3, 2021 @ 3:00 PM</td>
-										<td><a href="link">Author</a>, Institute</td>
-										<td>Tile</td>
-										<td>
-											<a href="link">[1]</a>
-											<a href="link">[2]</a>
-											<a href="link">[video]</a>
-										</td>
-									</tr>
-								</table>
-							</section>
-
-						<!-- Past events -->
-							<section id="past" class="main special">
-								<header class="major">
-									<h2>Previous talks</h2>
-								</header>
-
-								<p>Whenever possible, slides and videos will be available after each talk.</p>
-
-								<table>
-									<tr>
-										<th>Date (Eastern Time)</th>
-										<th>Presenter</th>
-										<th>Topic</th>
-										<th>Materials</th>
-									</tr>
-
-									<tr>
-										<td>October 27, 2021 @ 3:00 PM</td>
-										<td>Organizers</td>
-										<td>First Talk title</td>
-										<td><a href="link">[paper]</a></td>
-									</tr>
-
-									<tr>
-										<td>November 3, 2021 @ 3:00 PM</td>
-										<td><a href="link">Author</a>, Institute</td>
-										<td>Tile</td>
-										<td>
-											<a href="link">[1]</a>
-											<a href="link">[2]</a>
-											<a href="link">[video]</a>
-										</td>
-									</tr>
-								</table>
-
-							</section>
-
-						<!-- subscribe Section -->
-							<section id="subscribe" class="main special">
-								<header class="major">
-									<h2>Keep in touch</h2>
-								</header>
-								<p>Please fill the form below to receive reminders and updates from this group.</p>
-								<h2>Form</h2>
-								<form name="submit-to-google-sheet" onsubmit="alert('Thank you for subscribing. We will be in touch.')">
-									<div class="row gtr-uniform">
-										<div class="col-6 col-12-xsmall">
-											<input type="text" name="name" id="name" value="" placeholder="Name" required/>
-										</div>
-										<div class="col-6 col-12-xsmall">
-											<input type="email" name="email" id="email" value="" placeholder="Email" required/>
-										</div>
-										<div class="col-6 col-12-xsmall">
-											<input type="text" name="institution" id="institution" value="" placeholder="Institution" required/>
-										</div>
-										<div class="col-6 col-12-xsmall">
-											<select name="position" id="position">
-												<option value="Student">Student</option>
-												<option value="Academic researcher">Academic researcher</option>
-												<option value="Industry researcher">Industry researcher</option>
-												<option value="Other">Other</option>
-											</select>
-										</div>
-										<!-- <div class="col-12">
+        <!-- subscribe Section -->
+        <section id="subscribe" class="main special">
+          <header class="major">
+            <h2>Keep in touch</h2>
+          </header>
+          <p>
+            Please fill the form below to receive reminders and updates from
+            this group.
+          </p>
+          <h2>Form</h2>
+          <form
+            name="submit-to-google-sheet"
+            onsubmit="alert('Thank you for subscribing. We will be in touch.')"
+          >
+            <div class="row gtr-uniform">
+              <div class="col-6 col-12-xsmall">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  value=""
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  value=""
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <input
+                  type="text"
+                  name="institution"
+                  id="institution"
+                  value=""
+                  placeholder="Institution"
+                  required
+                />
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <select name="position" id="position">
+                  <option value="Student">Student</option>
+                  <option value="Academic researcher">
+                    Academic researcher
+                  </option>
+                  <option value="Industry researcher">
+                    Industry researcher
+                  </option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <!-- <div class="col-12">
 											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
 										</div> -->
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" value="Subscribe" class="primary" /></li>
-												<li><input type="reset" value="Clear" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
-					</div>
+              <div class="col-12">
+                <ul class="actions">
+                  <li>
+                    <input type="submit" value="Subscribe" class="primary" />
+                  </li>
+                  <li><input type="reset" value="Clear" /></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Valence Discovery. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+      <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">
+          &copy; Valence Discovery. Design:
+          <a href="https://html5up.net">HTML5 UP</a>.
+        </p>
+      </footer>
+    </div>
 
-			</div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwdYqs5hDfyXOE2CK-X7GgifUuVMl_0_8IfVVZ65sjnPoaMGQCK-X67eZozzk7tsz84/exec";
+      const form = document.forms["submit-to-google-sheet"];
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-			  const scriptURL = 'https://script.google.com/macros/s/AKfycbwdYqs5hDfyXOE2CK-X7GgifUuVMl_0_8IfVVZ65sjnPoaMGQCK-X67eZozzk7tsz84/exec'
-			  const form = document.forms['submit-to-google-sheet']
-
-			  form.addEventListener('submit', e => {
-				e.preventDefault()
-				fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				  .then(response => console.log('Success!', response))
-				  .catch(error => console.error('Error!', error.message))
-				form.reset()
-			  })
-			</script>
-
-	</body>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+        form.reset();
+      });
+    </script>
+  </body>
 </html>
-
