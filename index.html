@@ -51,8 +51,9 @@ tr:nth-child(even) {
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#past">Past talks</a></li>
+							<li><a href="#latest">The latest talk</a></li>
 							<li><a href="#upcoming">Upcoming talks</a></li>
+							<li><a href="#past">Previous talks</a></li>
 							<li><a href="#subscribe">Keep In Touch</a></li>
 						</ul>
 					</nav>
@@ -64,10 +65,10 @@ tr:nth-child(even) {
 							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
-										<header class="major">
+										<header class="major" style="display: flex; align-items: center; justify-content: center;">
 											<h2>Welcome</h2>
 										</header>
-										<p>Welcome to this space dedicated to the MAIDD Reading Group co-organized by
+										<p class="no-margin" >Welcome to this space dedicated to the MAIDD Reading Group co-organized by
 											<a href="https://valencediscovery.com/">Valence Discovery</a> and
 											<a href="https://mila.quebec/">Mila - Quebec AI Institute</a>.
 											Our aim is to offer a variety of talks and a discussion
@@ -94,40 +95,40 @@ tr:nth-child(even) {
 								</div>
 							</section>
 
-						<!-- Past events -->
-							<section id="past" class="main special">
-								<header class="major">
-									<h2>Past talks</h2>
+						<!-- Latest events -->
+							<section id="latest" class="main">
+								<header class="major" style="display: flex; align-items: center; justify-content: center;">
+									<h2>The Latest talk</h2>
 								</header>
-						
-								<p>Whenever possible, slides and videos will be available after each talk.</p>
+								<div class="item" style="display: flex; align-items: left; justify-content: left;">
+									<div style=" display: flex; margin: 0; position: relative; top: 50%; -ms-transform: translateY(50%); transform: translateY(25%);">
+										<iframe allowfullscreen="" src="https://www.youtube.com/embed/51_K8RDVlXY" height="200" ></iframe>
+									</div>
 
-								<table>
-									<tr>
-										<th>Date (Eastern Time)</th>
-										<th>Presenter</th>
-										<th>Topic</th>
-										<th>Materials</th>
-									</tr>
-
-									<tr>
-										<td>October 27, 2021 @ 3:00 PM</td>
-										<td>Organizers</td>
-										<td>First Talk title</td>
-										<td><a href="link">[paper]</a></td>
-									</tr>
-
-									<tr>
-										<td>November 3, 2021 @ 3:00 PM</td>
-										<td><a href="link">Author</a>, Institute</td>
-										<td>Tile</td>
-										<td>
-											<a href="link">[1]</a>
-											<a href="link">[2]</a>
-											<a href="link">[video]</a>
-										</td>
-									</tr>
-								</table>
+									<div >
+										Title: A very interesting work
+										Materials:  <a href="link">slides</a>, <a href="link">recordings</a> <br>
+										Speaker: <a href="https://www.linkedin.com/in/dbeaini/">Author1</a>
+										<a href="https://www.linkedin.com/in/prudencio-tossou/">Author2</a><br>
+										<p class="no-margin" style="text-align: justify">
+											Abstract:
+											In recent years, the Transformer architecture has proven to be very
+											successful in sequence processing, but its application to other data structures,
+											such as graphs, has remained limited due to the difficulty of properly defining positions.
+											Here, we present the Spectral Attention Network (SAN), which uses a learned positional
+											encoding (LPE) that can take advantage of the full Laplacian spectrum to learn the position
+											of each node in a given graph. This LPE is then added to the node features of the graph
+											and passed to a fully-connected Transformer. By leveraging the full spectrum of the
+											Laplacian, our model is theoretically powerful in distinguishing graphs, and can better
+											detect similar sub-structures from their resonance. Further, by fully connecting the graph,
+											the Transformer does not suffer from over-squashing, an information bottleneck of most GNNs,
+											and enables better modeling of physical phenomenons such as heat transfer and electric
+											interaction. When tested empirically on a set of 4 standard datasets, our model performs on
+											par or better than state-of-the-art GNNs, and outperforms any attention-based model by a
+											wide margin, becoming the first fully-connected architecture to perform well on graph benchmarks.
+										</p>
+									</div>
+								</div>
 
 							</section>
 
@@ -166,28 +167,69 @@ tr:nth-child(even) {
 										</td>
 									</tr>
 								</table>
+							</section>
+
+						<!-- Past events -->
+							<section id="past" class="main special">
+								<header class="major">
+									<h2>Previous talks</h2>
+								</header>
+
+								<p>Whenever possible, slides and videos will be available after each talk.</p>
+
+								<table>
+									<tr>
+										<th>Date (Eastern Time)</th>
+										<th>Presenter</th>
+										<th>Topic</th>
+										<th>Materials</th>
+									</tr>
+
+									<tr>
+										<td>October 27, 2021 @ 3:00 PM</td>
+										<td>Organizers</td>
+										<td>First Talk title</td>
+										<td><a href="link">[paper]</a></td>
+									</tr>
+
+									<tr>
+										<td>November 3, 2021 @ 3:00 PM</td>
+										<td><a href="link">Author</a>, Institute</td>
+										<td>Tile</td>
+										<td>
+											<a href="link">[1]</a>
+											<a href="link">[2]</a>
+											<a href="link">[video]</a>
+										</td>
+									</tr>
+								</table>
 
 							</section>
+
 						<!-- subscribe Section -->
 							<section id="subscribe" class="main special">
+								<header class="major">
+									<h2>Keep in touch</h2>
+								</header>
 								<p>Please fill the form below to receive reminders and updates from this group.</p>
 								<h2>Form</h2>
-								<form name="submit-to-google-sheet">
+								<form name="submit-to-google-sheet" onsubmit="alert('Thank you for subscribing. We will be in touch.')">
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="name" id="name" value="" placeholder="Name" />
+											<input type="text" name="name" id="name" value="" placeholder="Name" required/>
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="email" name="email" id="email" value="" placeholder="Email" />
+											<input type="email" name="email" id="email" value="" placeholder="Email" required/>
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="institution" id="institution" value="" placeholder="Institution" />
+											<input type="text" name="institution" id="institution" value="" placeholder="Institution" required/>
 										</div>
 										<div class="col-6 col-12-xsmall">
 											<select name="position" id="position">
-												<option value="1">Student</option>
-												<option value="1">Academia researcher</option>
-												<option value="1">Industry researcher</option>
+												<option value="Student">Student</option>
+												<option value="Academic researcher">Academic researcher</option>
+												<option value="Industry researcher">Industry researcher</option>
+												<option value="Other">Other</option>
 											</select>
 										</div>
 										<!-- <div class="col-12">
@@ -201,24 +243,12 @@ tr:nth-child(even) {
 										</div>
 									</div>
 								</form>
-
 							</section>
-
-
-					
-
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-						
-						</section>
-						<section>
-		
-
-						</section>
-						<p class="copyright">&copy; Christopher Morris. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Valence Discovery. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
@@ -236,11 +266,11 @@ tr:nth-child(even) {
 			  const form = document.forms['submit-to-google-sheet']
 
 			  form.addEventListener('submit', e => {
-				alert("toto")
 				e.preventDefault()
 				fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 				  .then(response => console.log('Success!', response))
 				  .catch(error => console.error('Error!', error.message))
+				form.reset()
 			  })
 			</script>
 
