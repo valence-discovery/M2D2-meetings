@@ -2199,9 +2199,6 @@ footer.major {
     margin-top: 0;
   }
 }
-header.major h2:after {
-  background-color: rgba(255, 255, 255, 0.35);
-}
 header.major h2.width-100:after {
   width: 100%;
 }
@@ -2885,11 +2882,10 @@ body.is-preload #header.alt .logo {
   color: #636363;
 }
 #main header.major h2:after {
-  background-color: #dddddd;
-  background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-  background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-  background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-  background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+  background-image: -moz-linear-gradient(316deg, rgba(244, 213, 108, 1) 50%, rgba(16,67,155,1) 100%);
+  background-image: -webkit-linear-gradient(316deg, rgba(244, 213, 108, 1) 50%, rgba(16,67,155,1) 100%);
+  background-image: -ms-linear-gradient(316deg, rgba(244, 213, 108, 1) 50%, rgba(16,67,155,1) 100%);
+  background-image: linear-gradient(316deg, rgba(244, 213, 108, 1) 50%, rgba(16,67,155,1) 100%);
 }
 #main header.major h2.width-100:after {
   width: 100%;

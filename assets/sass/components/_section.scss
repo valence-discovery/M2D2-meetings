@@ -90,10 +90,8 @@
 			&.major {
 				h2 {
 					&:after {
-						background-color: _palette($p, border);
-						
 						@if $p == 'invert' {
-							@include vendor('background-image', 'linear-gradient(90deg, #{_palette(accent1)}, #{_palette(accent3)}, #{_palette(accent5)})');
+							@include vendor('background-image', 'linear-gradient(316deg, rgba(244, 213, 108, 1) 50%, rgba(16,67,155,1) 100%)');
 						}
 					}
 
