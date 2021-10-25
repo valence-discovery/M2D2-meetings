@@ -34,6 +34,7 @@
       tr:nth-child(even) {
         background-color: #ffffff;
       }
+
     </style>
   </head>
   <body class="is-preload">
@@ -163,6 +164,7 @@
               align-items: center;
               justify-content: center;
               margin-bottom: 0;
+              margin-top: 0
             "
           >
             <h2 class="width-100">The Latest talk</h2>
@@ -171,26 +173,30 @@
             class="item"
             style="display: flex; flex-flow: column; justify-content: left"
           >
-            <div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
+<!--            <div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
               <iframe
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
                 allowfullscreen=""
                 src="https://www.youtube.com/embed/51_K8RDVlXY"
               ></iframe>
-            </div>
+            </div>-->
 
-            <div style="margin-top:12px;margin-bottom:12px;">
-              Title: A very interesting work Materials:
-              <a href="link">slides</a>, <a href="link">recordings</a> <br />
-              Speaker:
-              <a href="https://www.linkedin.com/in/dbeaini/">Author1</a>
-              <a href="https://www.linkedin.com/in/prudencio-tossou/"
-                >Author2</a
-              >
+
+            <div style="margin-top:2px;margin-bottom:2px;">
+              <font size="+100%"> A very interesting paper title </font> <br />
             </div>
             <div>
+              <iframe
+                style="float: right; margin-left: 20px; margin-bottom: 5 px; border: solid gray; padding:2px; width: 25%; height: 100%;"
+                allowfullscreen=""
+                src="https://www.youtube.com/embed/51_K8RDVlXY"
+              ></iframe>
               <p class="no-margin" style="text-align: justify">
-                Abstract: In recent years, the Transformer architecture has
+                <b>Materials: </b> <a href="link">slides</a>, <a href="link">recordings</a> </span>
+                <b>Speaker: </b>
+                <a href="https://www.linkedin.com/in/dbeaini/">Author1</a>,
+                <a href="https://www.linkedin.com/in/prudencio-tossou/">Author2</a> <br/>
+                <b>Abstract: </b> In recent years, the Transformer architecture has
                 proven to be very successful in sequence processing, but its
                 application to other data structures, such as graphs, has
                 remained limited due to the difficulty of properly defining
@@ -356,7 +362,7 @@
                   <option value="Other">Other</option>
                 </select>
               </div>
-              <div class="col-12">
+              <div class="col-12" style="margin-left: auto; margin-right: auto">
                 <ul class="actions">
                   <li>
                     <input type="submit"

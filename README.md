@@ -1,4 +1,4 @@
-# Website: Montreal AI for Drug Discovery meetings
+# Website: M<>ontreal AI for Drug Discovery meetings
 
 
 Credits to:

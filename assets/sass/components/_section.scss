@@ -91,12 +91,14 @@
 				h2 {
 					&:after {
 						@if $p == 'invert' {
-							@include vendor('background-image', 'linear-gradient(316deg, rgba(244, 213, 108, 1) 50%, rgba(16,67,155,1) 100%)');
+							@include vendor('background-image', 'linear-gradient(316deg, rgba(16,67,155,1) 50%, rgba(16,67,155,1) 100%)');
 						}
 					}
 
 					&.width-100:after {
-						width: 100%;
+						width: 80%;
+						margin-left: auto;
+						margin-right: auto;
 					}
 				}
 			}
