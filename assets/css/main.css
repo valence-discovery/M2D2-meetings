@@ -2509,6 +2509,9 @@ table.alt tbody tr td {
   margin: 0 0 0.25em 0;
   font-weight: 500;
 }
+#header h2 {
+  font-weight: 500;
+}
 #header p {
   font-size: 1.25em;
   color: white;
