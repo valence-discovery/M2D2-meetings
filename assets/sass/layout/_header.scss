@@ -12,6 +12,7 @@
 
 		h1 {
 			margin: 0 0 (_size(element-margin) * 0.125) 0;
+			font-weight: 500;
 		}
 
 		p {
@@ -28,8 +29,7 @@
 			}
 
 			> * {
-				@include vendor('transition', 'opacity 3s ease');
-				@include vendor('transition-delay', '0.5s');
+				@include vendor('transition', 'opacity 1s ease');
 				opacity: 1;
 			}
 
