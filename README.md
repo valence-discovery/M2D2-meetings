@@ -1,4 +1,4 @@
-# Website: M<>ontreal AI for Drug Discovery meetings
+# Website: Molecular Modelling and Drug Discovery
 
 
 Credits to:
