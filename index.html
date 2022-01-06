@@ -167,56 +167,22 @@
               margin-top: 0
             "
           >
-            <h2 class="width-100">The Latest talk</h2>
+            <h2 class="width-100">Next talk</h2>
           </header>
           <div
             class="item"
             style="display: flex; flex-flow: column; justify-content: left"
           >
-<!--            <div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
-              <iframe
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                allowfullscreen=""
-                src="https://www.youtube.com/embed/51_K8RDVlXY"
-              ></iframe>
-            </div>-->
-
 
             <div style="margin-top:2px;margin-bottom:2px;">
-              <font size="+100%"> A very interesting paper title </font> <br />
+              <font size="+100%"> Infomax improves GNNs for Molecular Property Prediction </font> <br />
             </div>
             <div>
-              <iframe
-                style="float: right; margin-left: 20px; margin-bottom: 5 px; border: solid gray; padding:2px; width: 25%; height: 100%;"
-                allowfullscreen=""
-                src="https://www.youtube.com/embed/51_K8RDVlXY"
-              ></iframe>
               <p class="no-margin" style="text-align: justify">
-                <b>Materials: </b> <a href="link">slides</a>, <a href="link">recordings</a> </span>
-                <b>Speaker: </b>
-                <a href="https://www.linkedin.com/in/dbeaini/">Author1</a>,
-                <a href="https://www.linkedin.com/in/prudencio-tossou/">Author2</a> <br/>
-                <b>Abstract: </b> In recent years, the Transformer architecture has
-                proven to be very successful in sequence processing, but its
-                application to other data structures, such as graphs, has
-                remained limited due to the difficulty of properly defining
-                positions. Here, we present the Spectral Attention Network
-                (SAN), which uses a learned positional encoding (LPE) that can
-                take advantage of the full Laplacian spectrum to learn the
-                position of each node in a given graph. This LPE is then added
-                to the node features of the graph and passed to a
-                fully-connected Transformer. By leveraging the full spectrum of
-                the Laplacian, our model is theoretically powerful in
-                distinguishing graphs, and can better detect similar
-                sub-structures from their resonance. Further, by fully
-                connecting the graph, the Transformer does not suffer from
-                over-squashing, an information bottleneck of most GNNs, and
-                enables better modeling of physical phenomenons such as heat
-                transfer and electric interaction. When tested empirically on a
-                set of 4 standard datasets, our model performs on par or better
-                than state-of-the-art GNNs, and outperforms any attention-based
-                model by a wide margin, becoming the first fully-connected
-                architecture to perform well on graph benchmarks.
+                <b>Speaker: </b> <a href="https://scholar.google.ca/citations?user=bnXfJdEAAAAJ&hl=fr&oi=ao">Hannes Stärk</a>
+                <br/><b>Bio: </b> Hannes is a research intern at MIT and received his master's from Technical University of Munich. He works on ML for graphs or other geometries and is interested in applications to small molecules and proteins.
+                <br/>
+                <b>Abstract: </b> Molecular property prediction is one of the fastest-growing applications of deep learning with critical real-world impacts. Including 3D molecular structure as input to learned models improves their performance for many molecular tasks. However, this information is infeasible to compute at the scale required by several real-world applications. We propose pre-training a model to reason about the geometry of molecules given only their 2D molecular graphs. Using methods from self-supervised learning, we maximize the mutual information between 3D summary vectors and the representations of a Graph Neural Network (GNN) such that they contain latent 3D information. During fine-tuning on molecules with unknown geometry, the GNN still generates implicit 3D information and can use it to improve downstream tasks. We show that 3D pre-training provides significant improvements for a wide range of properties, such as a 22% average MAE reduction on eight quantum mechanical properties. Moreover, the learned representations can be effectively transferred between datasets in different molecular spaces.
               </p>
             </div>
           </div>
@@ -245,23 +211,72 @@
               <th>Topic</th>
               <th>Materials</th>
             </tr>
-
+            <!--
+		philippe.schwaller@epfl.ch	Wed, Mar 2, 2022
+EvoMol: a flexible and interpretable evolutionary algorithm for unbiased de novo molecular generation		thomas.cauchy@univ-angers.fr
+-->
             <tr>
-              <td>October 27, 2021 @ 3:00 PM</td>
-              <td>Organizers</td>
-              <td>First Talk title</td>
+              <td>Wed, Jan 12, 2022 @ 10:00 AM ETD</td>
+              <td>Hannes Stärk</td>
+              <td>Infomax improves GNNs for Molecular Property Prediction</td>
               <td><a href="link">[paper]</a></td>
             </tr>
 
             <tr>
-              <td>November 3, 2021 @ 3:00 PM</td>
-              <td><a href="link">Author</a>, Institute</td>
-              <td>Tile</td>
-              <td>
-                <a href="link">[1]</a>
-                <a href="link">[2]</a>
-                <a href="link">[video]</a>
-              </td>
+              <td>Wed, Jan 19, 2022 @ 10:00 AM ETD</td>
+              <td>Kexin Huang</td>
+              <td>Therapeutics Data Commons, DeepPurpose, and SumGNN </td>
+              <td><a href="link">[paper]</a></td>
+            </tr>
+
+            <tr>
+              <td>Wed, Jan 26, 2022 @ 10:00 AM ETD</td>
+              <td>Wenhao Gao</td>
+              <td>Amortized Tree Generation for Bottom-up Synthesis Planning and Synthesizable Molecular Design</td>
+              <td><a href="link">[paper]</a></td>
+            </tr>
+
+            <tr>
+              <td>Wed, Feb 2, 2022 @ 10:00 AM ETD</td>
+              <td>Geemi P. Wellawatte</td>
+              <td>Model agnostic generation of counterfactual explanations for molecules</td>
+              <td><a href="link">[paper]</a></td>
+            </tr>
+
+            <tr>
+              <td>Wed, Feb 9, 2022 @ 10:00 AM ETD</td>
+              <td>Huaxiu Yao</td>
+              <td>Functionally Regionalized Knowledge Transfer for Low-resource Drug Discovery</td>
+              <td><a href="link">[paper]</a></td>
+            </tr>
+
+
+            <tr>
+              <th>Wed, Feb 16, 2022 @ 10:00 AM ETD</th>
+              <th>Aryan Deshwal</th>
+              <th>Combining Latent Space and Structured Kernels for Bayesian Optimization over Combinatorial Spaces</th>
+              <th>Materials</th>
+            </tr>
+
+                        <tr>
+              <th>Wed, Feb 23, 2022 @ 10:00 AM ETD</th>
+              <th>Nathan C. Frey</th>
+              <th>Flow-Based Models for Molecular GraphGeneration</th>
+              <th>Materials</th>
+            </tr>
+
+                        <tr>
+              <th>Wed, Mar 2, 2022 @ 10:00 AM ETD</th>
+              <th>Philippe Schwaller</th>
+              <th>AI for molecule synthesis and reaction prediction</th>
+              <th>Materials</th>
+            </tr>
+
+                        <tr>
+              <th>Wed, Mar 9, 2022 @ 10:00 AM ETD</th>
+              <th>Thomas Cauchy</th>
+              <th>EvoMol: a flexible and interpretable evolutionary algorithm for unbiased de novo molecular generation</th>
+              <th>Materials</th>
             </tr>
           </table>
         </section>
@@ -277,32 +292,33 @@
             talk.
           </p>
 
-          <table>
-            <tr>
-              <th>Date (Eastern Time)</th>
-              <th>Presenter</th>
-              <th>Topic</th>
-              <th>Materials</th>
-            </tr>
+          <!--
+          <div
+            class="item"
+            style="display: flex; flex-flow: column; justify-content: left"
+          >
 
-            <tr>
-              <td>October 27, 2021 @ 3:00 PM</td>
-              <td>Organizers</td>
-              <td>First Talk title</td>
-              <td><a href="link">[paper]</a></td>
-            </tr>
+            <div style="margin-top:2px;margin-bottom:2px;">
+              <font size="+100%"> Infomax improves GNNs for Molecular Property Prediction </font> <br />
+            </div>
+            <div>
+              <iframe
+                style="float: right; margin-left: 20px; margin-bottom: 5 px; border: solid gray; padding:2px; width: 25%; height: 100%;"
+                allowfullscreen=""
+                src="https://www.youtube.com/embed/51_K8RDVlXY"
+              ></iframe>
+              <p class="no-margin" style="text-align: justify">
+                <b>Materials: </b> <a href="link">slides</a>, <a href="link">recordings</a> </span>
+                <b>Speaker: </b>
+                <a href="https://www.linkedin.com/in/dbeaini/">Hannes Stärk</a>,
+                <a href="https://www.linkedin.com/in/prudencio-tossou/">Author2</a> <br/>
+                <b>Abstract: </b> Molecular property prediction is one of the fastest-growing applications of deep learning with critical real-world impacts. Including 3D molecular structure as input to learned models improves their performance for many molecular tasks. However, this information is infeasible to compute at the scale required by several real-world applications. We propose pre-training a model to reason about the geometry of molecules given only their 2D molecular graphs. Using methods from self-supervised learning, we maximize the mutual information between 3D summary vectors and the representations of a Graph Neural Network (GNN) such that they contain latent 3D information. During fine-tuning on molecules with unknown geometry, the GNN still generates implicit 3D information and can use it to improve downstream tasks. We show that 3D pre-training provides significant improvements for a wide range of properties, such as a 22% average MAE reduction on eight quantum mechanical properties. Moreover, the learned representations can be effectively transferred between datasets in different molecular spaces.
+              </p>
+            </div>
+          </div>
+           -->
 
-            <tr>
-              <td>November 3, 2021 @ 3:00 PM</td>
-              <td><a href="link">Author</a>, Institute</td>
-              <td>Tile</td>
-              <td>
-                <a href="link">[1]</a>
-                <a href="link">[2]</a>
-                <a href="link">[video]</a>
-              </td>
-            </tr>
-          </table>
+
         </section>
 
         <!-- subscribe Section -->
