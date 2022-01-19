@@ -177,23 +177,31 @@
           >
 
             <div style="margin-top:2px;margin-bottom:2px;">
-              <font size="+10%"> Challenges of Therapeutics Machine Learning in the Wild  </font> <br />
+              <font size="+10%"> Amortized Tree Generation for Bottom-up Synthesis Planning and Synthesizable Molecular Design  </font> <br />
             </div>
             <div>
               <p class="no-margin" style="text-align: justify">
-                <b>Date: </b> Wed, Jan 19, 2022 @ 10:00 AM EDT </span> </span>
-                <b>Speaker: </b> <a href="https://scholar.google.ca/citations?user=ogEXTOgAAAAJ&hl=fr&oi=ao">Kexin Huang</a>
-                <br/><b>Bio: </b> Kexin Huang is a CS PhD student at Stanford, advised by Prof. Jure Leskovec.
-                His research interests lie in algorithmic challenges arising from real-world machine learning and
-                biomedicine, with a focus on graph learning and therapeutics. He has conducted ML research in various
-                companies and institutions such as Pfizer, IQVIA, Flatiron Health, Dana Farber Cancer Institute, and Rockefeller University.
+                <b>Date: </b> Wed, Jan 26, 2022 @ 10:00 AM EDT </span> </span>
+                <b>Speaker: </b> <a href="https://scholar.google.com/citations?user=s4eywrUAAAAJ&hl=en&oi=ao">Wenhao Gao</a>
+                <br/><b>Bio: </b> Wenhao Gao is a Ph.D. candidate in Chemical Engineering at MIT. Under advisory from
+                Prof. Connor Coley, his research focuses on using artificial intelligence and robotic automation to
+                accelerate chemical discovery processes. Before joining the Coley research group, he received his
+                B.S. in Chemistry from Peking University and M.S. in Chemical and Biomolecular Engineering from Johns Hopkins University.
+
                 <br/>
                 <b>Abstract: </b>
-                Machine learning for therapeutics offer incredible opportunities for expansion, innovation, and impact.
-                Despite promises, many challenges exist. In this talk, the speaker will first highlight two high-impact
-                but relatively understudied directions - ML-aided clinical trial design and low-data/cross-context biomedicine.
-                Then, he will discuss challenges arising from therapeutics ML adoption in the wild, namely, generating actionable
-                hypotheses and user interface with domain scientists. Lastly, challenges in infrastructure, such as data and benchmark, will be looked at.
+                Molecular design and synthesis planning are two critical steps in the process of molecular discovery
+                that we propose to formulate as a single shared task of conditional synthetic pathway generation.
+                We report an amortized approach to generate synthetic pathways as a Markov decision process
+                conditioned on a target molecular embedding. This approach allows us to conduct synthesis planning in
+                a bottom-up manner and design synthesizable molecules by decoding from optimized conditional codes,
+                demonstrating the potential to solve both problems of design and synthesis simultaneously.
+                The approach leverages neural networks to probabilistically model the synthetic trees, one reaction
+                step at a time, according to reactivity rules encoded in a discrete action space of reaction templates.
+                We train these networks on hundreds of thousands of artificial pathways generated from a pool of purchasable
+                compounds and a list of expert-curated templates. We validate our method with (a) the recovery of molecules
+                using conditional generation, (b) the identification of synthesizable structural analogs,
+                and (c) the optimization of molecular structures given oracle functions relevant to drug discovery.
               </p>
             </div>
           </div>
@@ -219,12 +227,6 @@
               <th>Date (Eastern Time)</th>
               <th>Presenter</th>
               <th>Topic</th>
-            </tr>
-
-            <tr>
-              <td>Wed, Jan 26, 2022 @ 10:00 AM EDT</td>
-              <td>Wenhao Gao</td>
-              <td>Amortized Tree Generation for Bottom-up Synthesis Planning and Synthesizable Molecular Design</td>
             </tr>
 
             <tr>
