@@ -1,123 +1,95 @@
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
+  
+  "use strict";  
 
-	var	$window = $(window),
-		$body = $('body'),
-		$main = $('#main');
+  $(window).on('load', function() {
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ]
-		});
+  /*Page Loader active
+    ========================================================*/
+    $('#preloader').fadeOut();
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+  // Sticky Nav
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 200) {
+            $('.scrolling-navbar').addClass('top-nav-collapse');
+        } else {
+            $('.scrolling-navbar').removeClass('top-nav-collapse');
+        }
+    });
 
-	// Nav.
-		var $nav = $('#nav');
+    /* ==========================================================================
+       countdown timer
+       ========================================================================== */
+     jQuery('#clock').countdown('2020/2/21',function(event){
+      var $this=jQuery(this).html(event.strftime(''
+      +'<div class="time-entry days"><span>%-D</span> <b>:</b> Days</div> '
+      +'<div class="time-entry hours"><span>%H</span> <b>:</b> Hours</div> '
+      +'<div class="time-entry minutes"><span>%M</span> <b>:</b> Minutes</div> '
+      +'<div class="time-entry seconds"><span>%S</span> Seconds</div> '));
+    });
 
-		if ($nav.length > 0) {
+    /* Auto Close Responsive Navbar on Click
+    ========================================================*/
+    function close_toggle() {
+        if ($(window).width() <= 768) {
+            $('.navbar-collapse a').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+        }
+        else {
+            $('.navbar .navbar-inverse a').off('click');
+        }
+    }
+    close_toggle();
+    $(window).resize(close_toggle);
 
-			// Shrink effect.
-				$main
-					.scrollex({
-						mode: 'top',
-						enter: function() {
-							$nav.addClass('alt');
-						},
-						leave: function() {
-							$nav.removeClass('alt');
-						},
-					});
+      /* WOW Scroll Spy
+    ========================================================*/
+     var wow = new WOW({
+      //disabled for mobile
+        mobile: false
+    });
+    wow.init();
 
-			// Links.
-				var $nav_a = $nav.find('a');
+    /* Nivo Lightbox 
+    ========================================================*/
+    $('.lightbox').nivoLightbox({
+        effect: 'fadeScale',
+        keyboardNav: true,
+      });
 
-				$nav_a
-					.scrolly({
-						speed: 1000,
-						offset: function() { return $nav.height(); }
-					})
-					.on('click', function() {
+    // one page navigation 
+    $('.navbar-nav').onePageNav({
+            currentClass: 'active'
+    }); 
 
-						var $this = $(this);
+    /* Counter
+    ========================================================*/
+    $('.counterUp').counterUp({
+     delay: 10,
+     time: 1500
+    });
 
-						// External link? Bail.
-							if ($this.attr('href').charAt(0) != '#')
-								return;
+    /* Back Top Link active
+    ========================================================*/
+      var offset = 200;
+      var duration = 500;
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > offset) {
+          $('.back-to-top').fadeIn(400);
+        } else {
+          $('.back-to-top').fadeOut(400);
+        }
+      });
 
-						// Deactivate all links.
-							$nav_a
-								.removeClass('active')
-								.removeClass('active-locked');
+      $('.back-to-top').on('click',function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: 0
+        }, 600);
+        return false;
+      });
 
-						// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-							$this
-								.addClass('active')
-								.addClass('active-locked');
+  });      
 
-					})
-					.each(function() {
-
-						var	$this = $(this),
-							id = $this.attr('href'),
-							$section = $(id);
-
-						// No section for this link? Bail.
-							if ($section.length < 1)
-								return;
-
-						// Scrollex.
-							$section.scrollex({
-								mode: 'middle',
-								initialize: function() {
-
-									// Deactivate section.
-										if (browser.canUse('transition'))
-											$section.addClass('inactive');
-
-								},
-								enter: function() {
-
-									// Activate section.
-										$section.removeClass('inactive');
-
-									// No locked links? Deactivate all links and activate this section's one.
-										if ($nav_a.filter('.active-locked').length == 0) {
-
-											$nav_a.removeClass('active');
-											$this.addClass('active');
-
-										}
-
-									// Otherwise, if this section's link is the one that's locked, unlock it.
-										else if ($this.hasClass('active-locked'))
-											$this.removeClass('active-locked');
-
-								}
-							});
-
-					});
-
-		}
-
-	// Scrolly.
-		$('.scrolly').scrolly({
-			speed: 1000
-		});
-
-})(jQuery);
+}(jQuery));

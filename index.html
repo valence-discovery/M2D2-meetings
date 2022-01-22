@@ -1,397 +1,425 @@
 <!DOCTYPE html>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
   <head>
-    <title>Molecular Modeling and Drug Discovery</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <style>
-      table {
-        font-family: sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
+    <title>M2D2 - Molecular Modeling and Drug Discovery</title>
 
-      td,
-      th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Timeline Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/calendar.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      tr:nth-child(even) {
-        background-color: #ffffff;
-      }
+    
 
-    </style>
   </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Header -->
-      <header id="header" class="alt">
-        <div
-          style="display: flex; align-items: center; justify-content: center"
-        >
-          <span
-            class="logo"
-            onclick="window.location.href='https://mila.quebec/en/'"
-            ><img src="images/logo_mila.png" width="200" alt="" />
-          </span>
-          <span
-            class="logo"
-            onclick="window.location.href='https://valencediscovery.com/'"
-            ><img src="images/logo_valence.png" width="300" alt=""
-          /></span>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a href="index.html" class="navbar-brand">M<sub>2</sub>D<sub>2</sub></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header-wrap">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#schedules">
+                  Schedule
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">
+                  Latest Talks
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-map">
+                  Subscribe
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <h1><b>M<sub>2</sub>D<sub>2</sub>: Molecular Modeling and Drug Discovery</b></h1>
-        <p>
-          Organized by
-          <a href="https://linkedin.com/in/prudencio-tossou"
-            >Prudencio Tossou </a
-          >,
-          <a href="https://linkedin.com/in/therence-bois-23b99157/"
-            >Therence Bois</a
-          >, and
-          <a href="https://www.linkedin.com/in/caswognum/">Cas Wognum</a
-          ><br />
-        </p>
-        <p>
-          <div style="display: flex; align-items: center; justify-content: center">
-            <a
-            href="https://zoom.us/j/98629809897?pwd=WkJWVkFhQmYxMVp1akFVcmFEMEIvUT09"
-            >Zoom event link  </a>&nbsp &nbsp
-            <!-- Button code -->
-            <div title="Add to Calendar" class="addeventatc" style="background-color: #F4D66C; font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight:bold; text-decoration: none; padding: 14px 20px; color: #1D2025; border-radius: 5px; display:inline-block; mso-padding-alt:0; box-shadow:0 3px 6px rgba(0,0,0,.2);">
-                &nbsp &nbsp Add to Calendar
-                <span class="start">01/12/2022 10:00 AM</span>
-                <span class="end">01/12/2022 11:00 AM</span>
-                <span class="timezone">America/Toronto</span>
-                <span class="title">M<sub>2</sub>D<sub>2</sub> - Molecular Modeling and Drug Discovery </span>
-                <span class="description">Weekly M<sub>2</sub>D<sub>2</sub> meeting. More info on our website https://valence-discovery.github.io/M2D2-meetings/. Join Zoom Meeting here: https://zoom.us/j/98629809897?pwd=WkJWVkFhQmYxMVp1akFVcmFEMEIvUT09.</span>
-                <span class="location">Online event</span>
-                <span class="recurring">FREQ=WEEKLY;INTERVAL=1;COUNT=12</span>
-            </div>
-          </div>
-        </p>
-      </header>
-
-      <!-- Nav -->
-      <nav id="nav">
-        <ul>
-          <li><a href="#intro" class="active">Welcome</a></li>
-          <li><a href="#latest">The Next Talk</a></li>
-          <li><a href="#upcoming">Upcoming Talks</a></li>
-          <li><a href="#past">Previous Talks</a></li>
-          <li><a href="#subscribe">Keep In Touch</a></li>
-        </ul>
       </nav>
+      <!-- Navbar End -->
 
-      <!-- Main -->
-      <div id="main">
-        <!-- Introduction -->
-        <section id="intro" class="main">
-          <div >
-            <div class="content">
-              <header
-                class="major"
-                style="
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <h2 class="width-100">Welcome</h2>
-              </header>
-              <p class="no-margin"                 >
-                Welcome to this space dedicated to the M<sub>2</sub>D<sub>2</sub> Talks
-                co-organized by
-                <a href="https://valencediscovery.com/">Valence Discovery</a>
-                and
-                <a href="https://mila.quebec/">Mila - Quebec AI Institute</a>.
-                <br /><br />
-                From applied research papers to open source projects, we’re hoping
-                to use these talks to help demystify AI for drug discovery and make
-                the field more accessible for newcomers. M<sub>2</sub>D<sub>2</sub>  will bring our vibrant
-                AI & drug discovery communities together and spark new perspectives,
-                provoke discussions, and offer a safe space to share new ideas.
-                <br /><br />
-                A wide range of drug discovery related topics will be covered
-                reflecting the vibrant diversity of tools and methodologies in the community:
-
-              </p>
-
-              <ul>
-                <li>
-                  Applications of machine learning in computational molecular
-                  design
-                </li>
-                <li>
-                  Representation learning for small molecules and macromolecules
-                </li>
-                <li>Prediction of molecular properties and bioactivities</li>
-                <li>
-                  Machine learning for quantum chemistry and molecular dynamics
-                </li>
-                <li>Generative models for de novo molecular design</li>
-                <li>Active learning & uncertainty quantification</li>
-                <li>Multiparameter optimization and compound selection</li>
-                <li>Interpretable and explainable activity models</li>
-                <li>
-                  Reaction prediction, retrosynthesis, and synthesis planning
-                </li>
-              </ul>
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+<!--        <div class="overlay"></div>-->
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-sm-12">
+              <div class="contents text-center">
+                <div class="mx-auto mb-4">
+                  <img class="mx-2 w-25" src="assets/img/logo/logo_mila.png" width="40%"/>
+                  <img class="mx-2 w-25" src="assets/img/logo/logo_valence.png" width="40%"/>
+                </div>
+                <p class="banner-info">Wednesdays at 10:00 a.m. Eastern Time (ET)</p>
+                <h2 class="head-title">M<sub>2</sub>D<sub>2</sub>: Molecular Modeling and Drug Discovery</h2>
+                <p class="banner-desc">
+                    Organized by
+                    <a href="https://linkedin.com/in/prudencio-tossou">Prudencio Tossou </a>,
+                    <a href="https://linkedin.com/in/therence-bois-23b99157/">Therence Bois</a>, and
+                    <a href="https://www.linkedin.com/in/caswognum/">Cas Wognum</a><br>
+                </p>
+                <div class="banner-btn">
+                  <!-- Button code -->
+                    <div title="Add to Calendar" class="addeventatc">
+                        &nbsp &nbsp Add to Calendar
+                        <span class="start">01/12/2022 10:00 AM</span>
+                        <span class="end">01/12/2022 11:00 AM</span>
+                        <span class="timezone">America/Toronto</span>
+                        <span class="title">M<sub>2</sub>D<sub>2</sub> - Molecular Modeling and Drug Discovery </span>
+                        <span class="description">Weekly M<sub>2</sub>D<sub>2</sub> meeting. More info on our website https://valence-discovery.github.io/M2D2-meetings/. Join Zoom Meeting here: https://zoom.us/j/98629809897?pwd=WkJWVkFhQmYxMVp1akFVcmFEMEIvUT09.</span>
+                        <span class="location">Online event</span>
+                        <span class="recurring">FREQ=WEEKLY;INTERVAL=1;COUNT=12</span>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+      <!-- Hero Area End -->
 
-        <!-- Latest events -->
-        <section id="latest" class="main">
-          <header
-            class="major"
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              margin-bottom: 0;
-              margin-top: 0
-            "
-          >
-            <h2 class="width-100">The Next Talk</h2>
-          </header>
-          <div
-            class="item"
-            style="display: flex; flex-flow: column; justify-content: left"
-          >
-
-            <div style="margin-top:2px;margin-bottom:2px;">
-              <font size="+10%"> Amortized Tree Generation for Bottom-up Synthesis Planning and Synthesizable Molecular Design  </font> <br />
-            </div>
-            <div>
-              <p class="no-margin" style="text-align: justify">
-                <b>Date: </b> Wed, Jan 26, 2022 @ 10:00 AM EDT </span> </span>
-                <b>Speaker: </b> <a href="https://scholar.google.com/citations?user=s4eywrUAAAAJ&hl=en&oi=ao">Wenhao Gao</a>
-                <br/><b>Bio: </b> Wenhao Gao is a Ph.D. candidate in Chemical Engineering at MIT. Under advisory from
-                Prof. Connor Coley, his research focuses on using artificial intelligence and robotic automation to
-                accelerate chemical discovery processes. Before joining the Coley research group, he received his
-                B.S. in Chemistry from Peking University and M.S. in Chemical and Biomolecular Engineering from Johns Hopkins University.
-
-                <br/>
-                <b>Abstract: </b>
-                Molecular design and synthesis planning are two critical steps in the process of molecular discovery
-                that we propose to formulate as a single shared task of conditional synthetic pathway generation.
-                We report an amortized approach to generate synthetic pathways as a Markov decision process
-                conditioned on a target molecular embedding. This approach allows us to conduct synthesis planning in
-                a bottom-up manner and design synthesizable molecules by decoding from optimized conditional codes,
-                demonstrating the potential to solve both problems of design and synthesis simultaneously.
-                The approach leverages neural networks to probabilistically model the synthetic trees, one reaction
-                step at a time, according to reactivity rules encoded in a discrete action space of reaction templates.
-                We train these networks on hundreds of thousands of artificial pathways generated from a pool of purchasable
-                compounds and a list of expert-curated templates. We validate our method with (a) the recovery of molecules
-                using conditional generation, (b) the identification of synthesizable structural analogs,
-                and (c) the optimization of molecular structures given oracle functions relevant to drug discovery.
-              </p>
+    </header>
+    <!-- Header Area wrapper End -->
+    
+    <!-- Count Bar Start -->
+    <section id="count">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="card next-event-card">
+              <div class="card-header text-center" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
+                <p>Amortized Tree Generation for Bottom-up Synthesis Planning and Synthesizable Molecular Design - <b>Wenhao Gao</b></br>
+                <a class="false-link">(Click here for more information)</a></p>
+              </div>
+              
+              <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <p><b>Bio:</b> Wenhao Gao is a Ph.D. candidate in Chemical Engineering at MIT. Under advisory from Prof. Connor Coley, his research focuses on using artificial intelligence and robotic automation to accelerate chemical discovery processes. Before joining the Coley research group, he received his B.S. in Chemistry from Peking University and M.S. in Chemical and Biomolecular Engineering from Johns Hopkins University.</p></br>
+                    <p><b>Abstract:</b> Molecular design and synthesis planning are two critical steps in the process of molecular discovery that we propose to formulate as a single shared task of conditional synthetic pathway generation. We report an amortized approach to generate synthetic pathways as a Markov decision process conditioned on a target molecular embedding. This approach allows us to conduct synthesis planning in a bottom-up manner and design synthesizable molecules by decoding from optimized conditional codes, demonstrating the potential to solve both problems of design and synthesis simultaneously. The approach leverages neural networks to probabilistically model the synthetic trees, one reaction step at a time, according to reactivity rules encoded in a discrete action space of reaction templates. We train these networks on hundreds of thousands of artificial pathways generated from a pool of purchasable compounds and a list of expert-curated templates. We validate our method with (a) the recovery of molecules using conditional generation, (b) the identification of synthesizable structural analogs, and (c) the optimization of molecular structures given oracle functions relevant to drug discovery.</p>
+                </div>
+              </div>
+              <div class='card-footer text-center'>
+                <span class='date mx-2'><i class='lni-calendar mr-2'></i> Wednesday, 26 January 2022</span>
+                <a href="https://zoom.us/j/98629809897?pwd=WkJWVkFhQmYxMVp1akFVcmFEMEIvUT09"><span class='date mx-2'><i class='lni-video mr-2'></i>Join the Zoom call</span></a>
+              </div>
             </div>
           </div>
-        </section>
-
-        <!-- Upcoming events -->
-        <section id="upcoming" class="main special">
-          <header class="major">
-            <h2>Upcoming Talks</h2>
-          </header>
-
-          <p>
-            Please reach out
-            <a
-              href="mailto:prudencio@valencediscovery.com?cc=therence@valencediscovery.com,cas@valencediscovery.com&subject=[M2D2]%20Interested%20in%20presenting"
-              >here</a
-            >
-            if you want to present at those events.
-          </p>
-
-          <table>
-            <tr>
-              <th>Date (Eastern Time)</th>
-              <th>Presenter</th>
-              <th>Topic</th>
-            </tr>
-
-            <tr>
-              <td>Tue, Feb 1, 2022 @ 10:00 AM EDT</td>
-              <td>Geemi P. Wellawatte</td>
-              <td>Model agnostic generation of counterfactual explanations for molecules</td>
-            </tr>
-
-            <tr>
-              <td>Tue, Feb 8, 2022 @ 10:00 AM EDT</td>
-              <td>Huaxiu Yao</td>
-              <td>Functionally Regionalized Knowledge Transfer for Low-resource Drug Discovery</td>
-            </tr>
-
-
-            <tr>
-              <td>Tue, Feb 15, 2022 @ 10:00 AM EDT</td>
-              <td>Aryan Deshwal</td>
-              <td>Combining Latent Space and Structured Kernels for Bayesian Optimization over Combinatorial Spaces</td>
-            </tr>
-
-                        <tr>
-              <td>Tue, Feb 22, 2022 @ 10:00 AM EDT</td>
-              <td>Nathan C. Frey</td>
-              <td>Flow-Based Models for Molecular GraphGeneration</td>
-            </tr>
-
-                        <tr>
-              <td>Tue, Mar 1, 2022 @ 10:00 AM EDT</td>
-              <td>Philippe Schwaller</td>
-              <td>AI for molecule synthesis and reaction prediction</td>
-            </tr>
-
-                        <tr>
-              <td>Tue, Mar 8, 2022 @ 10:00 AM EDT</td>
-              <td>Thomas Cauchy</td>
-              <td>EvoMol: a flexible and interpretable evolutionary algorithm for unbiased de novo molecular generation</td>
-            </tr>
-          </table>
-        </section>
-
-        <!-- Past events -->
-        <section id="past" class="main special">
-          <header class="major">
-            <h2>Previous Talks</h2>
-          </header>
-
-          <p>
-            Whenever possible, slides and videos will be available after each talk. 
-	    The <a href="https://youtube.com/playlist?list=PLoVkjhDgBOt11Q3wu8lr6fwWHn5Vh3cHJ">full list of videos</a> can be found on the <a href="https://www.youtube.com/channel/UC3ew3t5al4sN-Zk01DGVKlg">Valence Discovery Youtube channel</a>
-          </p>
-
-	  <table class="vertically-centered">
-    	    <tr>
-              <th>Date (Eastern Time)</th>
-              <th>Presenter</th>
-              <th>Title</th>
-	      <th>Material</th>
-            </tr>
-	    <tr>
-	      <td>Wed, Jan 12, 2022 </br>@ 10:00 AM EDT</td>
-              <td>Hannes St&#228;rk</td>
-	      <td>Infomax improves GNNs for Molecular Property Prediction</td>
-	      <td><iframe src="https://www.youtube-nocookie.com/embed/zXOZj2C5OD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            </tr>
-	    <tr>
-	      <td>Wed, Jan 19, 2022 </br>@ 10:00 AM EDT</td>
-              <td>Kexin Huang</td>
-	      <td>Challenges of Therapeutics Machine Learning in the Wild</td>
-	      <td><iframe src="https://www.youtube-nocookie.com/embed/WdDnRFl8oIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            </tr>
-
-          </table>
-        </section>
-
-        <!-- subscribe Section -->
-        <section id="subscribe" class="main special">
-          <header class="major">
-            <h2>Keep In Touch</h2>
-          </header>
-          <p>
-            Please fill the form below to receive reminders and updates from
-            this group.
-          </p>
-          <h2>Form</h2>
-          <form
-            name="submit-to-google-sheet"
-            onsubmit="alert('Thank you for subscribing. We will be in touch.')"
-          >
-            <div class="row gtr-uniform">
-              <div class="col-6 col-12-xsmall">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  value=""
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div class="col-6 col-12-xsmall">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  value=""
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div class="col-6 col-12-xsmall">
-                <input
-                  type="text"
-                  name="institution"
-                  id="institution"
-                  value=""
-                  placeholder="Institution"
-                  required
-                />
-              </div>
-              <div class="col-6 col-12-xsmall">
-                <select name="position" id="position">
-                  <option value="Student">Student</option>
-                  <option value="Academic researcher">
-                    Academic researcher
-                  </option>
-                  <option value="Industry researcher">
-                    Industry researcher
-                  </option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-              <div class="col-12" style="margin-left: auto; margin-right: auto">
-                <ul class="actions">
-                  <li>
-                    <input type="submit"
-                           value="Subscribe"
-                           class="primary" />
-                  </li>
-                  <li><input type="reset" value="Clear" /></li>
+        </div>
+      </div>
+    </section>
+    <!-- Count Bar End -->
+    
+    <!-- About Section Start -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 d-none d-lg-inline p-4">
+            <div class="img-thumb">
+              <img class="img-fluid" src="assets/img/about/img2.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="about-content">
+              <div>
+                <div class="about-text">  
+                  <h2>About M<sub>2</sub>D<sub>2</sub></h2>
+                  <p>Welcome to this space dedicated to the M<sub>2</sub>D<sub>2</sub> Talks co-organized by Valence Discovery and Mila - Quebec AI Institute.</p>
+                  <p>From applied research papers to open source projects, we’re hoping to use these talks to help demystify AI for drug discovery and make the field more accessible for newcomers. M2D2 will bring our vibrant AI & drug discovery communities together and spark new perspectives, provoke discussions, and offer a safe space to share new ideas.</p>
+                  <p>A wide range of drug discovery related topics will be covered reflecting the vibrant diversity of tools and methodologies in the community:</p>
+                </div>
+                <ul class="stylish-list mb-3">
+                  <li><i class="lni-check-mark-circle"></i>Applications of ML in computational molecular design</li>
+                  <li><i class="lni-check-mark-circle"></i>Representation learning for small- and macromolecules</li>
+                  <li><i class="lni-check-mark-circle"></i>Prediction of molecular properties and bioactivities</li>
+                  <li><i class="lni-check-mark-circle"></i>ML for quantum chemistry and molecular dynamics</li>
+                  <li><i class="lni-check-mark-circle"></i>Generative models for de novo molecular design</li>
+                  <li><i class="lni-check-mark-circle"></i>Multiparameter optimization and compound selection</li>
+                  <li><i class="lni-check-mark-circle"></i>Interpretable and explainable activity models</li>
+                  <li><i class="lni-check-mark-circle"></i>Reaction prediction, retrosynthesis, and synthesis planning</li>
                 </ul>
               </div>
             </div>
-          </form>
-        </section>
+          </div>
+        </div>
       </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Schedule Section Start -->
+    <section id="schedules" class="schedule section-padding">
+		<div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="section-title-header text-center">
+                    <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Schedule</h2>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s">Please
+                        <a href="mailto:prudencio@valencediscovery.com?cc=therence@valencediscovery.com,cas@valencediscovery.com&amp;subject=[M2D2]%20Interested%20in%20presenting">reach out</a>
+                        if you would like to present at an upcoming event.
+                    </p>
+                </div>
+                    <div class="content w-100">
 
-      <!-- Footer -->
-      <footer id="footer">
-        <p class="copyright">
-          &copy; Valence Discovery. Design:
-          <a href="https://html5up.net">HTML5 UP</a>.
-        </p>
-      </footer>
+                    <div class="calendar-container">
+                      <div class="calendar"> 
+                        <div class="year-header"> 
+                          <span class="left-button fa fa-chevron-left" id="prev"> </span> 
+                          <span class="year-month" id="label"></span>
+                          <span class="right-button fa fa-chevron-right" id="next"> </span>
+                        </div> 
+                        <table class="months-table w-100"> 
+                          <tbody>
+                            <tr class="months-row">
+                              <td class="month">Jan</td> 
+                              <td class="month">Feb</td> 
+                              <td class="month">Mar</td> 
+                              <td class="month">Apr</td> 
+                              <td class="month">May</td> 
+                              <td class="month">Jun</td> 
+                              <td class="month">Jul</td>
+                              <td class="month">Aug</td> 
+                              <td class="month">Sep</td> 
+                              <td class="month">Oct</td>          
+                              <td class="month">Nov</td>
+                              <td class="month">Dec</td>
+                            </tr>
+                          </tbody>
+                        </table> 
+                        
+                        <table class="days-table w-100"> 
+                          <td class="day">Sun</td> 
+                          <td class="day">Mon</td> 
+                          <td class="day">Tue</td> 
+                          <td class="day">Wed</td> 
+                          <td class="day">Thu</td> 
+                          <td class="day">Fri</td> 
+                          <td class="day">Sat</td>
+                        </table> 
+                        <div class="frame"> 
+                          <table class="dates-table w-100"> 
+                          <tbody class="tbody">     
+                          </tbody> 
+                          </table>
+                        </div> 
+                      </div>
+                    </div>
+                    <div class="events-container text-center p-3">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Schedule Section End -->
+    <!-- Blog Section Start -->
+    <section id="blog" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Latest Recorded Talks</h2>
+                <p class="wow fadeInDown" data-wow-delay="0.2s">Whenever possible, slides and videos will be available after each talk.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="blog-item">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/zXOZj2C5OD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+              </div>
+              <div class="descr">
+                <h3 class="title">
+                  <a href="#">
+                    Hannes St&#228;rk
+                  </a>
+                </h3>
+                <p>3D Infomax improves GNNs for Molecular Property Prediction</p>
+              </div>
+              <div class="meta-tags">
+                <span class="date"><i class="lni-calendar"></i> Wed Jan 12, 2021</span> 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="blog-item">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/WdDnRFl8oIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+              </div>
+              <div class="descr">
+                <h3 class="title">
+                  <a href="#">
+                    Kexin Huang
+                  </a>
+                </h3>
+                <p>Challenges of Therapeutics Machine Learning in the Wild</p>
+              </div>
+              <div class="meta-tags">
+                <span class="date"><i class="lni-calendar"></i> Wed Jan 19, 2021</span> 
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <a href="https://youtube.com/playlist?list=PLoVkjhDgBOt11Q3wu8lr6fwWHn5Vh3cHJ" class="btn btn-common">View all recorded talks</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
+    <!-- Contact Us Section -->
+    <section id="contact-map" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Keep In Touch</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Please fill the form below to receive reminders and updates from this group.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="form-wrapper">
+                <form role="form" method="post" id="contactForm" name="submit-to-google-sheet" data-toggle="validator" onsubmit="alert('Thank you for subscribing. We will be in touch.')">
+                  <div class="row">
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="First Name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                    </div>
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <input type="tel" class="form-control" id="institution" name="institution" placeholder="Institution" required data-error="Please enter your associated institution">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <select class="form-control form-select" name="position" id="position">
+                          <option value="Student" selected>Student</option>
+                          <option value="Academic researcher">
+                            Academic researcher
+                          </option>
+                          <option value="Industry researcher">
+                            Industry researcher
+                          </option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-submit">
+                        <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Subscribe</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="footer-logo">
+              M<sub>2</sub>D<sub>2</sub>
+            </div>
+            <div class="social-icons-footer">
+              <ul>
+                <li class="twitter"><a target="_blank" href="https://twitter.com/valence_ai"><i class="lni-twitter-filled"></i></a></li>
+                <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/valence-discovery"><i class="lni-linkedin-filled"></i></a></li>
+              </ul>
+            </div>
+            <div class="site-info">
+              <p>Based on the template designed and developed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+
+    <div id="preloader">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/calendar.js" async defer></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/add_to_calendar.js"></script>
+    <script src="assets/js/calendar.js"></script>
+    <script src="assets/js/main.js"></script>   
+    
+    <!-- Form handler -->
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbwdYqs5hDfyXOE2CK-X7GgifUuVMl_0_8IfVVZ65sjnPoaMGQCK-X67eZozzk7tsz84/exec";
@@ -405,6 +433,5 @@
         form.reset();
       });
     </script>
-
   </body>
 </html>
