@@ -3,4 +3,5 @@
 
 Credits to:
 - https://github.com/jamiewilson/form-to-google-sheets
-- aj@lkn.io | @ajlkn
+- https://colorlib.com/wp/template/calendar-04/
+- https://graygrids.com/templates/eventup-event-meetup-conference-template/
