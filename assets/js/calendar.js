@@ -185,7 +185,7 @@ function show_events() {
     else {
         // Go through and add each event as a card to the events container
         for(var i=0; i<upcoming_events.length; i++) {
-            var date_str = upcoming_events[i]["day"] + " " + months[upcoming_events[i]["month"]] + ", " + upcoming_events[i]["year"];
+            var date_str = upcoming_events[i]["day"] + " " + months[upcoming_events[i]["month"]-1] + ", " + upcoming_events[i]["year"];
             $(".events-container").append(create_card(upcoming_events[i]["title"], upcoming_events[i]["speaker"], date_str));
         }
     }
