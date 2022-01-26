@@ -83,7 +83,7 @@
                   <img class="mx-2 w-25" src="assets/img/logo/logo_mila.png" width="40%"/>
                   <img class="mx-2 w-25" src="assets/img/logo/logo_valence.png" width="40%"/>
                 </div>
-                <p class="banner-info">Wednesdays at 10:00 a.m. Eastern Time (ET)</p>
+                <p class="banner-info">Tuesdays at 10:00 a.m. Eastern Time (ET)</p>
                 <h2 class="head-title">M<sub>2</sub>D<sub>2</sub>: Molecular Modeling and Drug Discovery</h2>
                 <p class="banner-desc">
                     Organized by
@@ -121,19 +121,43 @@
           <div class="col-10">
             <div class="card next-event-card">
               <div class="card-header text-center" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
-                <p>Amortized Tree Generation for Bottom-up Synthesis Planning and Synthesizable Molecular Design - <b>Wenhao Gao</b></br>
+                <p><b>Next Talk: </b></br>
+                  Model agnostic generation of counterfactual explanations for molecules - by <b>Geemi Wellawatte</b></br>
                 <a class="false-link">(Click here for more information)</a></p>
               </div>
               
               <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
-                    <p><b>Bio:</b> Wenhao Gao is a Ph.D. candidate in Chemical Engineering at MIT. Under advisory from Prof. Connor Coley, his research focuses on using artificial intelligence and robotic automation to accelerate chemical discovery processes. Before joining the Coley research group, he received his B.S. in Chemistry from Peking University and M.S. in Chemical and Biomolecular Engineering from Johns Hopkins University.</p></br>
-                    <p><b>Abstract:</b> Molecular design and synthesis planning are two critical steps in the process of molecular discovery that we propose to formulate as a single shared task of conditional synthetic pathway generation. We report an amortized approach to generate synthetic pathways as a Markov decision process conditioned on a target molecular embedding. This approach allows us to conduct synthesis planning in a bottom-up manner and design synthesizable molecules by decoding from optimized conditional codes, demonstrating the potential to solve both problems of design and synthesis simultaneously. The approach leverages neural networks to probabilistically model the synthetic trees, one reaction step at a time, according to reactivity rules encoded in a discrete action space of reaction templates. We train these networks on hundreds of thousands of artificial pathways generated from a pool of purchasable compounds and a list of expert-curated templates. We validate our method with (a) the recovery of molecules using conditional generation, (b) the identification of synthesizable structural analogs, and (c) the optimization of molecular structures given oracle functions relevant to drug discovery.</p></br>
+                    <p><b>Bio:</b>
+                      Geemi Wellawatte is a fourth year PhD candidate at the University of Rochester,
+                      working under the guidance of Prof. Andrew White. Her latest work focuses on explainable
+                      Artificial intelligence (XAI) with counterfactuals. Additionally, she investigates applications of
+                      ML in coarse-grained molecular dynamics (CG-MD).
+                      She holds a B.Sc. degree in Computational Chemistry from University of Colombo,
+                      Sri Lanka and a master's degree in Chemistry from the University of Rochester.
+                      She is a recipient of MolSSI Covid-19 seed fellowship, Sherman-Clarke Fellowship and
+                      Esther M. Conwell graduate fellowship from University of Rochester.</p></br>
+
+                    <p><b>Abstract:</b>
+                    One of the challenges with deep learning is lack of model interpretability. This is a significant
+                      drawback in the chemistry domain as lack of knowledge why a certain prediction was made dissuades
+                      chemists to trust predictions from deep learning. In this work we propose a method that can
+                      provide local explanations for arbitrary models with the use of molecular counterfactuals.
+                      These are sparse explanations composed of molecular structures.
+                      A counterfactual is an example as close to the original, but with a different outcome.
+                      Although relatively new to AI, counterfactual explanations are a mature topic in philosophy
+                      and mathematics. We use counterfactuals to answer, “what is the smallest change to the features
+                      that would alter the prediction". Our Molecular Model Agnostic Counterfactual Explanations (MMACE),
+                      method is built on the STONED (Nigam et al., 2021) algorithm to traverse a local chemical space
+                      around a given base molecule to identify counterfactuals.
+                      Further, we introduce an open-source software named “exmol” that implements the MMACE algorithm for generating counterfactual explanations.
+
+            </p></br>
 		    <p><b>Useful links:</b><a href="https://arxiv.org/abs/2110.06389"><span class="mx-2"><i class="lni-empty-file mr-2"></i>Paper</span></a></p>
 	        </div>
               </div>
               <div class='card-footer text-center'>
-                <span class='date mx-2'><i class='lni-calendar mr-2'></i> Wednesday, 26 January 2022</span>
+                <span class='date mx-2'><i class='lni-calendar mr-2'></i> Tuesday, 1 February 2022</span>
                 <a href="https://zoom.us/j/98629809897?pwd=WkJWVkFhQmYxMVp1akFVcmFEMEIvUT09"><span class='date mx-2'><i class='lni-video mr-2'></i>Join the Zoom call</span></a>
               </div>
             </div>
