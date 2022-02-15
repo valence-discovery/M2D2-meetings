@@ -267,7 +267,7 @@ var event_data = {
         "cancelled": false
     },
     {
-        "title": "Flow-Based Models for Molecular GraphGeneration",
+        "title": "Scalable Geometric Deep Learning on Molecular Graphs",
         "speaker": "Nathan C. Frey",
         "year": 2022,
         "month": 2,
