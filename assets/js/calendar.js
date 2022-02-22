@@ -275,7 +275,7 @@ var event_data = {
         "cancelled": false
     },
     {
-        "title": "AI for molecule synthesis and reaction prediction",
+        "title": "Accelerating Organic Synthesis with Chemical Language Models",
         "speaker": "Philippe Schwaller",
         "year": 2022,
         "month": 3,
@@ -288,6 +288,22 @@ var event_data = {
         "year": 2022,
         "month": 3,
         "day": 8,
+        "cancelled": false
+    },
+    {
+        "title": "Structured Refinement Network for Antibody Design",
+        "speaker": "Wengong Jin",
+        "year": 2022,
+        "month": 3,
+        "day": 15,
+        "cancelled": false
+    },
+    {
+        "title": "Combining quantum mechanics with drug design",
+        "speaker": "Clemens Isert",
+        "year": 2022,
+        "month": 3,
+        "day": 22,
         "cancelled": false
     },
     ]
