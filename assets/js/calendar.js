@@ -299,7 +299,7 @@ var event_data = {
         "cancelled": false
     },
     {
-        "title": "Combining quantum mechanics with drug design",
+        "title": "Quantum Machine-Learning for Drug-like Molecules",
         "speaker": "Clemens Isert",
         "year": 2022,
         "month": 3,
