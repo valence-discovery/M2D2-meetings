@@ -306,6 +306,30 @@ var event_data = {
         "day": 22,
         "cancelled": false
     },
+    {
+        "title": "Geometric Deep Learning for Drug Binding Structure Prediction",
+        "speaker": "Octavian-Eugen Ganea",
+        "year": 2022,
+        "month": 3,
+        "day": 29,
+        "cancelled": false
+    },
+    {
+        "title": "Sequential model optimization for combo-drug repurposing",
+        "speaker": "Paul Bertin",
+        "year": 2022,
+        "month": 4,
+        "day": 5,
+        "cancelled": false
+    },
+    {
+        "title": "TDB",
+        "speaker": "Moksh Jain",
+        "year": 2022,
+        "month": 4,
+        "day": 12,
+        "cancelled": false
+    },
     ]
 };
 
