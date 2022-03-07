@@ -323,7 +323,7 @@ var event_data = {
         "cancelled": false
     },
     {
-        "title": "TDB",
+        "title": "TBD",
         "speaker": "Moksh Jain",
         "year": 2022,
         "month": 4,
