@@ -307,7 +307,7 @@ var event_data = {
         "cancelled": false
     },
     {
-        "title": "Geometric Deep Learning for Drug Binding Structure Prediction",
+        "title": "Euclidean Deep Learning Models for 3D Structures and Interactions of Molecules",
         "speaker": "Octavian-Eugen Ganea",
         "year": 2022,
         "month": 3,
