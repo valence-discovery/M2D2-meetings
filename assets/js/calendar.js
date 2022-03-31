@@ -315,7 +315,7 @@ var event_data = {
         "cancelled": false
     },
     {
-        "title": "Sequential model optimization for combo-drug repurposing",
+        "title": "RECOVER: efficient exploration of the drug combination space via model-guided in vitro experiments",
         "speaker": "Paul Bertin",
         "year": 2022,
         "month": 4,
