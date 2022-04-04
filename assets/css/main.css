@@ -2530,6 +2530,16 @@ footer {
   visibility: visible;
 }
 
+#hero-area .slackbutton {
+  background-color: rgb(244, 214, 108);
+  padding: 14px 20px;
+  color: rgb(29, 32, 37);
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px;
+  visibility: visible;
+}
+
 #hero-area .contents {
   padding: 120px 20px 90px;
 }

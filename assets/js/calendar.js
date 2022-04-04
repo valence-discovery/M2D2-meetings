@@ -188,6 +188,9 @@ function show_events() {
             var date_str = upcoming_events[i]["day"] + " " + months[upcoming_events[i]["month"]-1] + ", " + upcoming_events[i]["year"];
             $(".events-container").append(create_card(upcoming_events[i]["title"], upcoming_events[i]["speaker"], date_str));
         }
+        const next_date = upcoming_events[0]["month"] + "/" + upcoming_events[0]["day"] + "/" + upcoming_events[0]["year"]
+        document.getElementById("cal_start").innerHTML = next_date + " 10:00 AM";
+        document.getElementById("cal_end").innerHTML = next_date + " 11:00 AM";
     }
 }
 
