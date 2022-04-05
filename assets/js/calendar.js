@@ -341,7 +341,7 @@ var event_data = {
         "day": 19,
         "cancelled": false
     },
-        {
+    {
         "title": "TBD",
         "speaker": "TBD",
         "year": 2022,
