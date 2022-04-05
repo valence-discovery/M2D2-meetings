@@ -350,7 +350,7 @@ var event_data = {
         "cancelled": false
     },
         {
-        "title": "Exposing the limitations of molecular machine learning with activity cliffs"",
+        "title": "Exposing the limitations of molecular machine learning with activity cliffs",
         "speaker": "Derek van Tilborg",
         "year": 2022,
         "month": 5,
