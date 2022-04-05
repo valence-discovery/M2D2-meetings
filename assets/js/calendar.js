@@ -326,11 +326,35 @@ var event_data = {
         "cancelled": false
     },
     {
-        "title": "TBD",
+        "title": "Epistemic Uncertainty Estimation for Efficient Search of Drug Candidates",
         "speaker": "Moksh Jain",
         "year": 2022,
         "month": 4,
         "day": 12,
+        "cancelled": false
+    },
+     {
+        "title": "TBD",
+        "speaker": "Dominique Beaini",
+        "year": 2022,
+        "month": 4,
+        "day": 19,
+        "cancelled": false
+    },
+        {
+        "title": "TBD",
+        "speaker": "TBD",
+        "year": 2022,
+        "month": 4,
+        "day": 26,
+        "cancelled": false
+    },
+        {
+        "title": "Exposing the limitations of molecular machine learning with activity cliffs"",
+        "speaker": "Derek van Tilborg",
+        "year": 2022,
+        "month": 5,
+        "day": 3,
         "cancelled": false
     },
     ]

@@ -130,40 +130,41 @@
             <div class="card next-event-card">
 	      <div class="card-header text-center font-weight-bold">Next Talk</div>
               <div class="card-header text-center" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
-                  RECOVER: efficient exploration of the drug combination space via model-guided in vitro experiments - <b>Paul Bertin</b></br>
+                  Epistemic Uncertainty Estimation for Efficient Search of Drug Candidates - <b>Moksh Jain</b></br>
                 <a class="false-link">(Click here for more information)</a></p>
               </div>
 
               <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <p><b>Abstract:</b>
-                        Combining drugs opens new possibilities for tailoring therapies to a given disease and
-                        targeting several biological pathways at the same time. However the number of possible
-                        drug combinations is huge, and only a tiny portion of this space can be explored in a
-                        reasonable amount of time. One could either narrowly focus on experimenting with a very
-                        restricted number of well-chosen drugs, based on pre-existing biological knowledge, or
-                        broaden the scope by exploring uncharted territories with the risk of very low time and
-                        cost efficiency. In order to balance between these two approaches, we propose to drive
-                        the exploration of the drug combination space with a sequential model optimization algorithm.
-                        We iteratively perform model-guided wet lab experiments and adapt to newly acquired data.
-                        After only three rounds of in vitro experimentation, we found that the set of combinations
-                        queried by our model was enriched for highly synergistic combinations. Remarkably, we
-                        rediscovered a synergistic drug combination that was later confirmed to be under study
-                        within clinical trials.
+                        In computational drug discovery we often rely on surrogate models for molecular design and
+                        optimization. The estimates of the epistemic uncertainty of those surrogate models can be
+                        useful signals to enable efficient exploration in the molecular space. Traditional methods
+                        such as Bayesian optimization use Bayesian models like Gaussian Processes (GPs) as surrogates.
+                        Gaussian processes provide well calibrated uncertainty estimates, but do not scale trivially
+                        to large datasets and require hand-crafted kernels to work with structured data like strings
+                        (SMILES, peptides) and graphs. Despite their impressive performance across various domains,
+                        efficient and accurate epistemic uncertainty estimation for neural networks remains an open
+                        problem. Existing approaches rely on approximations based on Bayesian interpretations of
+                        neural networks to obtain uncertainty estimates. These estimates, however tend to be poorly
+                        calibrated and do not account for the effect of model misspecification. This is critical in
+                        interactive settings where the model predictions are used to acquire data. In this talk,
+                        I will present DEUP, a novel method for uncertainty estimation designed for interactive settings,
+                        which uses an additional network to predict the epistemic uncertainty. I will also discuss a
+                        real-world application leveraging epistemic uncertainty estimates for designing anti-microbial peptides.
                     </p></br>
 
                     <p><b>Bio:</b>
-                        Paul Bertin  is a third year PhD student at Mila, advised by Yoshua Bengio. He received his
-                        Masters degree in Applied Mathematics from the ENS Paris-Saclay under the supervision of
-                        Stanley Durrleman and Nicolas Renier, working on 3D embedded graphs to better understand the
-                        organization of brain vessel networks. His current research seeks to develop
-                        machine learning methods for predicting the response of cells to perturbations: chemicals or biologics. He is especially
-                        interested in taking inspiration from the causal inference literature, as well as Cell biology.
+                        Moksh is a graduate student at Mila and the University of Montreal, where he is supervised
+                        by Prof. Yoshua Bengio. His is interested in developing deep learning methods for sequential
+                        decision making, and their applications for scientific discovery. Before joining Mila, he
+                        spent a year working on resource efficient machine learning methods at Microsoft, after
+                        graduating with a bachelor's degree from NITK Surathkal.
                     </p></br>
                     <p>
                         <b>Useful links:</b>
-                        <a href="https://arxiv.org/pdf/2202.04202.pdf"><span class="mx-2"><i class="lni-empty-file mr-1"></i>Paper</span></a>
-                        <a href="https://mila.quebec/en/article/a-collaboration-between-mila-and-relation-therapeutics-to-discover-novel-synergistic-combinations-of-drugs-in-vitro/"><span class="mx-2"><i class="lni-github-original mr-1"></i>Blogpost</span></a>
+                        <a href="https://arxiv.org/pdf/2102.08501.pdf"><span class="mx-2"><i class="lni-empty-file mr-1"></i>DEUP</span></a>,
+                        <a href="https://arxiv.org/pdf/2203.04115.pdf"><span class="mx-2"><i class="lni-empty-file mr-1"></i>AMP Design</span></a>
                     </p>
                 </div>
               </div>
