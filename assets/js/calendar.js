@@ -342,8 +342,8 @@ var event_data = {
         "cancelled": false
     },
     {
-        "title": "TBD",
-        "speaker": "TBD",
+        "title": "No meeting",
+        "speaker": "No meeting",
         "year": 2022,
         "month": 4,
         "day": 26,
