@@ -334,7 +334,7 @@ var event_data = {
         "cancelled": false
     },
     {
-        "title": "TBD",
+        "title": "Can graph neural networks understand chemistry?",
         "speaker": "Dominique Beaini",
         "year": 2022,
         "month": 4,
@@ -347,7 +347,7 @@ var event_data = {
         "year": 2022,
         "month": 4,
         "day": 26,
-        "cancelled": false
+        "cancelled": true
     },
     {
         "title": "Exposing the limitations of molecular machine learning with activity cliffs",
@@ -355,6 +355,22 @@ var event_data = {
         "year": 2022,
         "month": 5,
         "day": 3,
+        "cancelled": false
+    },
+    {
+        "title": "Learning 3D Representations Of Molecular Chirality With Invariance To Bond Rotations",
+        "speaker": "Keir Adams",
+        "year": 2022,
+        "month": 5,
+        "day": 10,
+        "cancelled": false
+    },
+    {
+        "title": "Prediction of stable ternary complexes",
+        "speaker": "Noah Weber",
+        "year": 2022,
+        "month": 5,
+        "day": 17,
         "cancelled": false
     }
     ]
