@@ -211,7 +211,8 @@ function check_events(day, month, year) {
         var event = event_data["events"][i];
         if(event["day"]===day &&
             event["month"]===month &&
-            event["year"]===year) {
+            event["year"]===year &&
+            !event["cancelled"]) {
                 events.push(event);
             }
     }
