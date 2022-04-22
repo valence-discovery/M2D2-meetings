@@ -27,7 +27,12 @@
     <!-- Favicons and similar -->
     <link href="https://assets.website-files.com/5ffb54870e826a46069b3ab3/603c238893f850739b72f85e_favicon%4032w.png" rel="shortcut icon" type="image/x-icon">
     <link href="https://assets.website-files.com/5ffb54870e826a46069b3ab3/603c238c9664717f3cdd5ba9_favicon%40256.png" rel="apple-touch-icon">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 
@@ -129,29 +134,18 @@
           <div class="col-10">
             <div class="card next-event-card">
 	      <div class="card-header text-center font-weight-bold">Next Talk</div>
-              <div class="card-header text-center" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
-                  Can graph neural networks understand chemistry? - <b>Dominique Beaini</b></br>
-                <a class="false-link">(Click here for more information)</a></p>
+              <div class="card-header text-center" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                   aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
+                  <p id="title_and_speaker"></p>
+                <a class="false-link">(Click here for more information)</a>
               </div>
 
               <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
-                    <p><b>Abstract:</b>
-                        In this talk, I will explain how to empower graph neural networks (GNNs) for molecular property
-                        prediction with more expressive models and large datasets. Graph neural networks (GNNs) have
-                        emerged as one of the most important innovations for machine learning in drug discovery.
-                        Their ability to work on unstructured data enables us to use deep learning on molecular graphs,
-                        with the promise of predicting molecular properties with the same speed and accuracy that
-                        convolutional networks process images. However, GNNs face unprecedented challenges that I
-                        address in the talk, including the difficulty of detecting sub-structures, modeling non-covalent
-                        interactions, and the lack of large datasets.
+                    <p><b>Abstract:</b> <div id="talk_abstract"></div>
                     </p></br>
 
-                    <p><b>Bio:</b>
-                        Dominique is a lead researcher at Valence Discovery, an adjunct professor at the University
-                        of Montreal, and an associate industry member at Mila. He has led various projects meant to
-                        improve the expressiveness of graph neural networks and is leading the development of
-                        large-scale models for chemistry at Valence Discovery.
+                    <p><b>Bio:</b> <div id="speaker_bio"></div>
                     </p></br>
                     <p>
                         <b>Useful links:</b>
@@ -282,49 +276,43 @@
             </div>
           </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="blog-item">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/zWldQSYG1gQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
-                    </div>
-                    <div class="descr">
-                        <b class="title">Paul Bertin</b>
-                        <p>RECOVER: Efficient exploration of the drug combination space via model-guided in vitro experiments</p>
-                    </div>
-                    <div class="meta-tags">
-                        <span class="date"><i class="lni-calendar"></i> Tue Mar 15, 2022</span> 
+
+
+        <div id="owl-demo-2" class="owl-carousel owl-theme" x-data>
+            <template x-for="(meeting, index) in window.past_events">
+                <div class="col-lg-4 col-md-6 col-xs-12 item">
+                    <div class="blog-item ">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/706KjyR-wyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                        </div>
+                        <div class="descr"  :id="`heading${index}`" data-toggle="collapse" :data-target="`#videocollapse${index}`"
+                               aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
+                            <b class="title" x-text="meeting.speaker"></b>
+                            <p x-text="meeting.title"></p>
+                              <p id="vvvtitle_and_speaker"></p>
+                            <a class="false-link">(More)</a>
+                        </div>
+
+                        <div :id="`videocollapse${index}`" class="collapse hide" :aria-labelledby="`heading${index}`" data-parent="#accordion">
+                            <p><b>Abstract:</b> <div x-text="meeting.abstract"></div>
+                            </p></br>
+
+                            <p><b>Bio:</b> <div x-text="meeting.bio"></div>
+                            </p></br>
+                            <p>
+                                <b>Useful links:</b>
+                                <template x-for="link in meeting.useful_links">
+                                    <a :href="link.link"><span class="mx-2"><i class="lni-empty-file mr-1"></i><span x-text="link.name"></span></span></a>
+                                </template>
+                            </p>
+                        </div>
+
+                        <div class="meta-tags">
+                            <span class="date" ><i class="lni-calendar"></i><span x-text="meeting.date"></span></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="blog-item">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/706KjyR-wyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
-                    </div>
-                    <div class="descr">
-                        <b class="title">Octavian-Eugen Ganea</b>
-                        <p>Euclidean Deep Learning Models for 3D Structures and Interactions of Molecules</p>
-                    </div>
-                    <div class="meta-tags">
-                        <span class="date"><i class="lni-calendar"></i> Tue Mar 29, 2022</span> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="blog-item">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/4eyh3GhhvHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
-                    </div>
-                    <div class="descr">
-                        <b class="title">Clemens Isert</b>
-                        <p>Quantum Machine-Learning for Drug-like Molecules</p>
-                    </div>
-                    <div class="meta-tags">
-                        <span class="date"><i class="lni-calendar"></i> Tue Mar 22, 2022</span> 
-                    </div>
-                    </div>
-            </div>
+            </template>
         </div>
         <div class="col-12 text-center">
           <a href="https://youtube.com/playlist?list=PLoVkjhDgBOt11Q3wu8lr6fwWHn5Vh3cHJ" class="btn btn-common">View all recorded talks</a>
@@ -452,7 +440,15 @@
     <script src="assets/js/nivo-lightbox.js"></script>
     <script src="assets/js/add_to_calendar.js?v=2"></script>
     <script src="assets/js/calendar.js?v=3"></script>
-    <script src="assets/js/main.js"></script>   
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.1/cdn.min.js"
+            integrity="sha512-9ohRWhYVw36J0GQWBU2PrkYBUuWOVzo3872qHsgHbeAS+7xrCthbh8E4t3XLsqHWRb0h9dn45X9S17DHdNAnJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
     
     <!-- Form handler -->
     <script>
@@ -476,6 +472,116 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-RVKJBSLG70');
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+<!--        jQuery(document).ready(function($) {-->
+
+<!--            var owl = $("#owl-demo-2");-->
+
+<!--            owl.owlCarousel({-->
+
+
+<!--                autoplay:true,-->
+<!--                autoplayTimeout:1000,-->
+<!--                autoplayHoverPause:true,-->
+
+<!--                items: 3,-->
+<!--                loop: true,-->
+<!--                center: false,-->
+<!--                rewind: false,-->
+
+<!--                mouseDrag: true,-->
+<!--                touchDrag: true,-->
+<!--                pullDrag: true,-->
+<!--                freeDrag: false,-->
+
+<!--                margin: 0,-->
+<!--                stagePadding: 0,-->
+
+<!--                merge: false,-->
+<!--                mergeFit: true,-->
+<!--                autoWidth: false,-->
+
+<!--                startPosition: 0,-->
+<!--                rtl: false,-->
+
+<!--                smartSpeed: 250,-->
+<!--                fluidSpeed: false,-->
+<!--                dragEndSpeed: false,-->
+<!--                responsive: {-->
+<!--                    0: {-->
+<!--                        items: 1,-->
+<!--                        nav: true-->
+<!--                    },-->
+<!--                    480: {-->
+<!--                        items: 2,-->
+<!--                        nav: false-->
+<!--                    },-->
+<!--                    768: {-->
+<!--                        items: 3,-->
+<!--                        nav: true,-->
+<!--                        loop: false-->
+<!--                    },-->
+<!--                    992: {-->
+<!--                        items: 4,-->
+<!--                        nav: true,-->
+<!--                        loop: false-->
+<!--                    }-->
+<!--                },-->
+<!--                responsiveRefreshRate: 200,-->
+<!--                responsiveBaseElement: window,-->
+
+<!--                fallbackEasing: 'swing',-->
+
+<!--                info: false,-->
+
+<!--                nestedItemSelector: false,-->
+<!--                itemElement: 'div',-->
+<!--                stageElement: 'div',-->
+
+<!--                refreshClass: 'owl-refresh',-->
+<!--                loadedClass: 'owl-loaded',-->
+<!--                loadingClass: 'owl-loading',-->
+<!--                rtlClass: 'owl-rtl',-->
+<!--                responsiveClass: 'owl-responsive',-->
+<!--                dragClass: 'owl-drag',-->
+<!--                itemClass: 'owl-item',-->
+<!--                stageClass: 'owl-stage',-->
+<!--                stageOuterClass: 'owl-stage-outer',-->
+<!--                grabClass: 'owl-grab',-->
+<!--                autoHeight: false,-->
+<!--                lazyLoad: false-->
+
+<!--            });-->
+
+<!--            $(".next").click(function() {-->
+<!--                owl.trigger('owl.next');-->
+<!--            });-->
+<!--            $(".prev").click(function() {-->
+<!--                owl.trigger('owl.prev');-->
+<!--            });-->
+
+<!--            /* Equal Heights using javascript */-->
+<!--            // $('.latest-blog-posts .thumbnail.item').matchHeight();-->
+
+<!--        });-->
     </script>
 
   </body>
