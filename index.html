@@ -278,43 +278,39 @@
         </div>
 
 
-        <div id="owl-demo-2" class="owl-carousel owl-theme" x-data>
-            <template x-for="(meeting, index) in window.past_events">
-                <div class="col-lg-4 col-md-6 col-xs-12 item">
-                    <div class="blog-item ">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/706KjyR-wyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
-                        </div>
-                        <div class="descr"  :id="`heading${index}`" data-toggle="collapse" :data-target="`#videocollapse${index}`"
-                               aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
-                            <b class="title" x-text="meeting.speaker"></b>
-                            <p x-text="meeting.title"></p>
-                              <p id="vvvtitle_and_speaker"></p>
-                            <a class="false-link">(More)</a>
-                        </div>
+        <div id="app" class="row owl-carousel owl-theme">
+          <div v-for="(meeting, index) in pastEvents">
+            <div class="blog-item">
+              <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/706KjyR-wyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+              </div>
+              <div class="descr" :id="`heading${index}`" data-toggle="collapse" :data-target="`#videocollapse${index}`"
+                     aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
+                  <b class="title" v-text="meeting.speaker"></b>
+                  <p v-text="meeting.title"></p>
+                    <p id="vvvtitle_and_speaker"></p>
+                  <!-- <a class="false-link">(More)</a> -->
+              </div>
 
-                        <div :id="`videocollapse${index}`" class="collapse hide" :aria-labelledby="`heading${index}`" data-parent="#accordion">
-                            <p><b>Abstract:</b> <div x-text="meeting.abstract"></div>
-                            </p></br>
+              <div :id="`videocollapse${index}`" class="collapse hide" :aria-labelledby="`heading${index}`" data-parent="#accordion">
+                  <!-- <p><b>Abstract:</b> <div v-text="meeting.abstract" style="padding: 2px;"></div>
+                  </p></br>
 
-                            <p><b>Bio:</b> <div x-text="meeting.bio"></div>
-                            </p></br>
-                            <p>
-                                <b>Useful links:</b>
-                                <template x-for="link in meeting.useful_links">
-                                    <a :href="link.link"><span class="mx-2"><i class="lni-empty-file mr-1"></i><span x-text="link.name"></span></span></a>
-                                </template>
-                            </p>
-                        </div>
+                  <p><b>Bio:</b> <div v-text="meeting.bio"></div>
+                  </p></br> -->
+                  <p>
+                      <b>Useful links:</b>
+                      <a :href="link.link" v-for="link in meeting.useful_links"><span class="mx-2"><i class="lni-empty-file mr-1"></i><span v-text="link.name"></span></span></a>
+                  </p>
+              </div>
 
-                        <div class="meta-tags">
-                            <span class="date" ><i class="lni-calendar"></i><span x-text="meeting.date"></span></span>
-                        </div>
-                    </div>
-                </div>
-            </template>
+              <div class="meta-tags">
+                  <span class="date" ><i class="lni-calendar"></i><span v-text="meeting.date"></span></span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-12 text-center">
+        <div style="margin-top: 10px;" class="col-12 text-center">
           <a href="https://youtube.com/playlist?list=PLoVkjhDgBOt11Q3wu8lr6fwWHn5Vh3cHJ" class="btn btn-common">View all recorded talks</a>
         </div>
       </div>
@@ -441,9 +437,7 @@
     <script src="assets/js/add_to_calendar.js?v=2"></script>
     <script src="assets/js/calendar.js?v=3"></script>
     <script src="assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.1/cdn.min.js"
-            integrity="sha512-9ohRWhYVw36J0GQWBU2PrkYBUuWOVzo3872qHsgHbeAS+7xrCthbh8E4t3XLsqHWRb0h9dn45X9S17DHdNAnJQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
             integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -475,113 +469,27 @@
     </script>
 
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        })
-<!--        jQuery(document).ready(function($) {-->
+      Vue.createApp({
+        data() {
+          return {
+            pastEvents: window.past_events.reverse()
+          }
+        }
+      }).mount('#app')
 
-<!--            var owl = $("#owl-demo-2");-->
-
-<!--            owl.owlCarousel({-->
-
-
-<!--                autoplay:true,-->
-<!--                autoplayTimeout:1000,-->
-<!--                autoplayHoverPause:true,-->
-
-<!--                items: 3,-->
-<!--                loop: true,-->
-<!--                center: false,-->
-<!--                rewind: false,-->
-
-<!--                mouseDrag: true,-->
-<!--                touchDrag: true,-->
-<!--                pullDrag: true,-->
-<!--                freeDrag: false,-->
-
-<!--                margin: 0,-->
-<!--                stagePadding: 0,-->
-
-<!--                merge: false,-->
-<!--                mergeFit: true,-->
-<!--                autoWidth: false,-->
-
-<!--                startPosition: 0,-->
-<!--                rtl: false,-->
-
-<!--                smartSpeed: 250,-->
-<!--                fluidSpeed: false,-->
-<!--                dragEndSpeed: false,-->
-<!--                responsive: {-->
-<!--                    0: {-->
-<!--                        items: 1,-->
-<!--                        nav: true-->
-<!--                    },-->
-<!--                    480: {-->
-<!--                        items: 2,-->
-<!--                        nav: false-->
-<!--                    },-->
-<!--                    768: {-->
-<!--                        items: 3,-->
-<!--                        nav: true,-->
-<!--                        loop: false-->
-<!--                    },-->
-<!--                    992: {-->
-<!--                        items: 4,-->
-<!--                        nav: true,-->
-<!--                        loop: false-->
-<!--                    }-->
-<!--                },-->
-<!--                responsiveRefreshRate: 200,-->
-<!--                responsiveBaseElement: window,-->
-
-<!--                fallbackEasing: 'swing',-->
-
-<!--                info: false,-->
-
-<!--                nestedItemSelector: false,-->
-<!--                itemElement: 'div',-->
-<!--                stageElement: 'div',-->
-
-<!--                refreshClass: 'owl-refresh',-->
-<!--                loadedClass: 'owl-loaded',-->
-<!--                loadingClass: 'owl-loading',-->
-<!--                rtlClass: 'owl-rtl',-->
-<!--                responsiveClass: 'owl-responsive',-->
-<!--                dragClass: 'owl-drag',-->
-<!--                itemClass: 'owl-item',-->
-<!--                stageClass: 'owl-stage',-->
-<!--                stageOuterClass: 'owl-stage-outer',-->
-<!--                grabClass: 'owl-grab',-->
-<!--                autoHeight: false,-->
-<!--                lazyLoad: false-->
-
-<!--            });-->
-
-<!--            $(".next").click(function() {-->
-<!--                owl.trigger('owl.next');-->
-<!--            });-->
-<!--            $(".prev").click(function() {-->
-<!--                owl.trigger('owl.prev');-->
-<!--            });-->
-
-<!--            /* Equal Heights using javascript */-->
-<!--            // $('.latest-blog-posts .thumbnail.item').matchHeight();-->
-
-<!--        });-->
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin: 10,
+        responsiveClass:true,
+        responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          }
+        }
+      });
     </script>
 
   </body>
