@@ -231,7 +231,7 @@ window.event_data = {
     "events": [
     {
         "title": "3D Infomax improves GNNs for Molecular Property Prediction",
-        "speaker": "Hannes St&auml;rk",
+        "speaker": "Hannes Stärk",
         "year": 2022,
         "month": 1,
         "day": 12,
@@ -448,7 +448,7 @@ window.event_data = {
                          {"name": "SAN", "link": "https://proceedings.neurips.cc/paper/2021/file/b4fd1d2cb085390fbbadae65e07876a7-Paper.pdf"},
                          ],
         "recording": "https://www.youtube.com/embed/jrVXJykB8qc",
-        "recording_id": "",
+        "recording_id": "jrVXJykB8qc",
         "slides": "",
         "cancelled": false
     },

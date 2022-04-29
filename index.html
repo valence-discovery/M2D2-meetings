@@ -21,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!-- Lazyyt Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/lazyyt.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -286,16 +288,16 @@
           <div v-for="(meeting, index) in pastEvents">
             <div class="row align-items-top">
                 <div class="col-sm-6 blog-item">
-                  <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" width="100%" height="200px" :src="meeting.recording"
-                              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-                              allowfullscreen></iframe>
-                  </div>
-<!--                    &lt;!&ndash; 1. Video Wrapper Container &ndash;&gt;-->
-<!--                  <div class="embed-youtube" :data-video-id="meeting.recording_id">-->
-<!--                    &lt;!&ndash; 2. The preview button that will contain the Play icon &ndash;&gt;-->
-<!--                    <div class="embed-youtube-play"></div>-->
+<!--                  <div class="embed-responsive embed-responsive-16by9">-->
+<!--                      <iframe class="embed-responsive-item" width="100%" height="200px" :src="meeting.recording"-->
+<!--                              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"-->
+<!--                              allowfullscreen></iframe>-->
 <!--                  </div>-->
+                    <!-- 1. Video Wrapper Container -->
+                  <div class="embed-youtube" :data-video-id="meeting.recording_id">
+                    <!-- 2. The preview button that will contain the Play icon -->
+                    <div class="embed-youtube-play"></div>
+                  </div>
                   <div class="descr" :id="`heading${index}`"
                          aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
                       <b class="title" v-text="meeting.speaker"></b>
@@ -452,6 +454,7 @@
     <script src="assets/js/calendar.js?v=3"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
+    <script src="assets/js/lazyyt.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
             integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -491,7 +494,11 @@
           return {
             pastEvents: window.past_events.reverse()
           }
+        },
+        mounted() {
+            lazyloadiframe()
         }
+
       }).mount('#app')
 
     var owl = $('.owl-carousel');
