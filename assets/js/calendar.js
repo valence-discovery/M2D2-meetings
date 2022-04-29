@@ -164,10 +164,13 @@ function show_events() {
     for(var i=0; i<event_data["events"].length; i++) {
         var event = event_data["events"][i];
         var event_date = new Date(event["year"], event["month"] - 1, event["day"])
-        if(event_date >= today) {
+        if ((event_date >= today) &&  !event["cancelled"] ) {
             upcoming_events.push(event);
         } else {
-            past_events.push(event);
+            if ( !event["cancelled"] ){
+                past_events.push(event);
+            }
+
         }
     }
     
@@ -235,7 +238,8 @@ window.event_data = {
         "abstract": "Molecular property prediction is one of the fastest-growing applications of deep learning with critical real-world impacts. Including 3D molecular structure as input to learned models improves their performance for many molecular tasks. However, this information is infeasible to compute at the scale required by several real-world applications. We propose pre-training a model to reason about the geometry of molecules given only their 2D molecular graphs. Using methods from self-supervised learning, we maximize the mutual information between 3D summary vectors and the representations of a Graph Neural Network (GNN) such that they contain latent 3D information. During fine-tuning on molecules with unknown geometry, the GNN still generates implicit 3D information and can use it to improve downstream tasks. We show that 3D pre-training provides significant improvements for a wide range of properties, such as a 22% average MAE reduction on eight quantum mechanical properties. Moreover, the learned representations can be effectively transferred between datasets in different molecular spaces.",
         "bio": "Hannes is a research intern at MIT and received his master's from Technical University of Munich. He works on ML for graphs or other geometries and is interested in applications to small molecules and proteins.",
         "useful_links": [{"name":"3D Infomax", "link":"https://arxiv.org/pdf/2110.04126.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/zXOZj2C5OD4",
+        "recording": "https://www.youtube.com/embed/zXOZj2C5OD4",
+        "recording_id": "zXOZj2C5OD4",
         "slides": "https://drive.google.com/file/d/1iFLPdkZJzonbH3F1l5SA-yBmATi3V_mq/view?usp=sharing",
         "cancelled": false
     },
@@ -250,7 +254,8 @@ window.event_data = {
         "useful_links": [{"name":"HINT", "link":"https://www.sciencedirect.com/science/article/pii/S2666389922000186"},
             {"name":"DrugExplorer", "link":"https://osf.io/yhdpv/download"},
             {"name":"GMeta", "link":"https://proceedings.neurips.cc/paper/2020/file/412604be30f701b1b1e3124c252065e6-Paper.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/WdDnRFl8oIw",
+        "recording": "https://www.youtube.com/embed/WdDnRFl8oIw",
+        "recording_id": "WdDnRFl8oIw",
         "slides": "https://drive.google.com/file/d/1cdgWHkmLXPCz6XOLfRBbqG1uViUA6ZuU/view?usp=sharing",
         "cancelled": false
     },
@@ -263,7 +268,8 @@ window.event_data = {
         "abstract": "Molecular design and synthesis planning are two critical steps in the process of molecular discovery that we propose to formulate as a single shared task of conditional synthetic pathway generation. We report an amortized approach to generate synthetic pathways as a Markov decision process conditioned on a target molecular embedding. This approach allows us to conduct synthesis planning in a bottom-up manner and design synthesizable molecules by decoding from optimized conditional codes, demonstrating the potential to solve both problems of design and synthesis simultaneously. The approach leverages neural networks to probabilistically model the synthetic trees, one reaction step at a time, according to reactivity rules encoded in a discrete action space of reaction templates. We train these networks on hundreds of thousands of artificial pathways generated from a pool of purchasable compounds and a list of expert-curated templates. We validate our method with (a) the recovery of molecules using conditional generation, (b) the identification of synthesizable structural analogs, and (c) the optimization of molecular structures given oracle functions relevant to drug discovery.",
         "bio": "Wenhao Gao is a Ph.D. candidate in Chemical Engineering at MIT. Under advisory from Prof. Connor Coley, his research focuses on using artificial intelligence and robotic automation to accelerate chemical discovery processes. Before joining the Coley research group, he received his B.S. in Chemistry from Peking University and M.S. in Chemical and Biomolecular Engineering from Johns Hopkins University.",
         "useful_links": [{"name":"TreeGeneration", "link":"https://arxiv.org/pdf/2110.06389.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/8waF9Uu4fdE",
+        "recording": "https://www.youtube.com/embed/8waF9Uu4fdE",
+        "recording_id": "8waF9Uu4fdE",
         "slides": "https://drive.google.com/file/d/1gy0hA0pPufD90kia0JXeAwNB_jglLA2C/view?usp=sharing",
         "cancelled": false
     },
@@ -276,7 +282,8 @@ window.event_data = {
         "abstract": "One of the challenges with deep learning is lack of model interpretability. This is a significant drawback in the chemistry domain as lack of knowledge why a certain prediction was made dissuades chemists to trust predictions from deep learning. In this work we propose a method that can provide local explanations for arbitrary models with the use of molecular counterfactuals. These are sparse explanations composed of molecular structures. A counterfactual is an example as close to the original, but with a different outcome. Although relatively new to AI, counterfactual explanations are a mature topic in philosophy and mathematics. We use counterfactuals to answer, \"what is the smallest change to the features that would alter the prediction\". Our Molecular Model Agnostic Counterfactual Explanations (MMACE), method is built on the STONED (Nigam et al., 2021) algorithm to traverse a local chemical space around a given base molecule to identify counterfactuals. Further, we introduce an open-source software named “exmol” that implements the MMACE algorithm for generating counterfactual explanations.",
         "bio": "Geemi Wellawatte is a fourth year PhD candidate at the University of Rochester, working under the guidance of Prof. Andrew White. Her latest work focuses on explainable Artificial intelligence (XAI) with counterfactuals. Additionally, she investigates applications of  ML in coarse-grained molecular dynamics (CG-MD). She holds a B.Sc. degree in Computational Chemistry from University of Colombo, Sri Lanka and a master's degree in Chemistry from the University of Rochester. She is a recipient of MolSSI Covid-19 seed fellowship, Sherman-Clarke Fellowship and Esther M. Conwell graduate fellowship from University of Rochester.",
         "useful_links": [{"name":"ExMol", "link":"https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/6115baf04cb4797dc42df605/original/model-agnostic-generation-of-counterfactual-explanations-for-molecules.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/ZWnsLHgzmSU",
+        "recording": "https://www.youtube.com/embed/ZWnsLHgzmSU",
+        "recording_id": "ZWnsLHgzmSU",
         "slides": "",
         "cancelled": false
     },
@@ -289,7 +296,8 @@ window.event_data = {
         "abstract": "Meta-learning transfers knowledge across tasks and domains to learn new tasks efficiently, which has shown promise in drug discovery. However, the generalization ability of current meta-learning methods is limited by task heterogeneity and memorization. In this talk, I will first introduce two general principles to improve the generalization ability in meta-learning: organization and augmentation. Then, I will present several concrete few-shot drug discovery instantiations of using each principle. This includes algorithms to organize and adapt knowledge and a simple method for sufficiently overcoming task memorization. The remaining challenges and promising future research directions will also be discussed.",
         "bio": "Huaxiu Yao is a Postdoctoral Scholar of Computer Science at Stanford University, working with Prof. Chelsea Finn. His current research focuses on building machine learning models that are robust to distribution shifts. He is also passionate about applying these methods to solve real-world problems with limited data. He obtained his Ph.D. degree from Pennsylvania State University. His research results have been published in top venues such as ICML, ICLR, NeurIPS, KDD, AAAI. He previously served as tutorial speaker in KDD, IJCAI, AAAI, and MetaLearn workshop organizer in NeurIPS.",
         "useful_links": [{"name":"FRML", "link":"https://proceedings.neurips.cc/paper/2021/file/459a4ddcb586f24efd9395aa7662bc7c-Paper.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/UsTvKhBnF-I",
+        "recording": "https://www.youtube.com/embed/UsTvKhBnF-I",
+        "recording_id": "UsTvKhBnF-I",
         "slides": "",
         "cancelled": false
     },
@@ -303,7 +311,8 @@ window.event_data = {
         "bio": "Aryan Deshwal is a senior PhD student in the School of EECS at Washington State University (WSU). His general research interests are in AI and ML with a focus on probabilistic modeling and optimization to support decision-making under uncertainty in structured domains. The overarching goal of his research is to develop principled ML solutions to accelerate engineering design and scientific discovery towards high-impact sustainability applications. His research is published at top-tier venues including ICML, NeurIPS, AAAI, IJCAI, and JAIR. He won many awards including an Outstanding Dissertation Award (2020) from WSU for his MS Thesis, Outstanding Teaching Assistant Award from the College of Engineering, and Outstanding Reviewer Awards from ICML (2020, 2021) and ICLR (2021) conferences. He is the lead organizer of the \"Annual Workshop on AI to Accelerate Science and Engineering\" and the Tutorial on \"Recent Advances in Bayesian Optimization\" at AAAI conference (2022).",
         "useful_links": [{"name":"LADDER", "link":"https://arxiv.org/pdf/2111.01186.pdf"},
                          {"name":"MerCBO", "link": "https://www.aaai.org/AAAI21Papers/AAAI-5637.DeshwalA.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/TKnUiGwTo3A",
+        "recording": "https://www.youtube.com/embed/TKnUiGwTo3A",
+        "recording_id": "TKnUiGwTo3A",
         "slides": "https://drive.google.com/file/d/155_8M4_zMt005ydLQw7aMTbwR4lyj_k5/view?usp=sharing",
         "cancelled": false
     },
@@ -317,7 +326,8 @@ window.event_data = {
         "bio": "Nathan Frey is a postdoctoral associate at MIT working with the Lincoln Lab Supercomputing and AI groups, and Professors Connor Coley and Rafael Gómez-Bombarelli. He was a National Defense Science &amp; Engineering Graduate Fellow at the University of Pennsylvania, where he obtained a PhD in Materials Science. Dr. Frey was also an affiliate scientist with the Materials Project at Berkeley Lab, developing theoretical and computational methods to study quantum materials. He is a core contributor to DeepChem, an open-source library for deep learning in chemistry and life sciences. Dr. Frey’s research integrates physics-based simulation, high- performance computing, and machine learning to gain physical insight into atomistic systems for applications in energy, quantum information, and biotechnology. He has published more than 20 scientific papers in journals such as Science Advances, ACS Nano, JACS, and Chemistry of Materials.",
         "useful_links": [{"name": "LitMatter", "link": "https://arxiv.org/pdf/2112.03364.pdf"},
                          {"name": "Benchmarking", "link": "https://arxiv.org/pdf/2201.12423.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/vh9yeKYwumA",
+        "recording": "https://www.youtube.com/embed/vh9yeKYwumA",
+        "recording_id": "vh9yeKYwumA",
         "slides": "",
         "cancelled": false
     },
@@ -331,7 +341,8 @@ window.event_data = {
         "bio": "Philippe Schwaller received a bachelor’s and master’s degree in Materials Science and Engineering from EPFL.  While working for IBM Research, Philippe completed an MPhil degree in Physics at the University of Cambridge and a PhD in Chemistry and Molecular Sciences with the Reymond group at the University of Bern. In February 2022, Philippe joined EPFL as a tenure-track assistant professor in the Institute of Chemical Sciences and Engineering. He leads the Laboratory of Artificial Chemical Intelligence (<a href=\"https://twitter.com/SchwallerGroup\">LIAC</a>), which works on AI-accelerated discovery and synthesis of molecules. Philippe is also a core PI of the NCCR Catalysis, a Swiss centre for sustainable chemistry research, education, and innovation.",
         "useful_links": [{"name": "RXNMapper", "link": "https://github.com/rxn4chemistry/rxnmapper"},
                          {"name": "Unsupervised Grammar", "link": "https://www.science.org/doi/pdf/10.1126/sciadv.abe4166"}],
-        "recording": "https://www.youtube-nocookie.com/embed/3WbrYKO38PA",
+        "recording": "https://www.youtube.com/embed/3WbrYKO38PA",
+        "recording_id": "3WbrYKO38PA",
         "slides": "",
         "cancelled": false
     },
@@ -344,7 +355,8 @@ window.event_data = {
         "abstract": "Beyond the active search for new drugs, de novo generation methods are also a great opportunity for the discovery of molecular materials. However, the chemical space of these materials differs from that of bioactive molecules. This conference will present the challenges inherent to this kind of problems. For most molecular materials, new targets must have specific electronic properties. This normally means a very costly evaluation by quantum mechanical calculations. Furthermore this evaluation requires a knowledge of the atomic positions in three dimensions. All these specific constraints have led us to propose our own generation method based on EvoMol, an efficient evolutionary algorithm. Free to travel the whole chemical space, the methods that limit the solutions to realistic molecules will be presented.",
         "bio": "Trained as a theoretical molecular chemist, Thomas completed his PhD concerning molecular magnetism under the supervision of Eliseo Ruiz at the University of Barcelona. He is now an assistant professor at the University of Angers. With his experimental colleagues, they work on the development of new organic molecular materials such as organic electronics. For several years, he has also been collaborating with Benoit Da Mota (University of Angers) on the application of combinatorial optimization and machine learning methods for molecular chemistry.",
         "useful_links": [{"name": "EvoMol", "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7494000/"}],
-        "recording": "https://www.youtube-nocookie.com/embed/DLaJ529c1ag",
+        "recording": "https://www.youtube.com/embed/DLaJ529c1ag",
+        "recording_id": "DLaJ529c1ag",
         "slides": "https://drive.google.com/file/d/1UH3ZTq1JcA2Szps20c6sdd8tzPRwYFVF/view?usp=sharing",
         "cancelled": false
     },
@@ -357,7 +369,8 @@ window.event_data = {
         "abstract": "Antibodies are versatile proteins that bind to pathogens like viruses and stimulate the adaptive   immune system. The antibody binding affinity is determined by complementarity-determining regions   (CDRs) at the tips of these Y-shaped proteins, which closely interact with antigen residues   (epitopes). In this talk, I will present new generative models to automatically design the   CDRs of antibodies with desired binding affinity. Specifically, our model seeks to co-design the   sequence and 3D structure of CDRs as graphs. It unravels a sequence autoregressively while iteratively   refining its predicted global 3D structure. Our model is evaluated on binder design tasks and shows   superior performance compared to existing baselines.",
         "bio": "Wengong Jin is a postdoctoral fellow at Eric and Wendy Schmidt Center of Broad Institute.   He finished his Ph.D. in MIT CSAIL, advised by Regina Barzilay and Tommi Jaakkola.   His research seeks to develop novel machine learning algorithms for biology,   including drug discovery, immunology, genetic engineering, and synthetic biology. He is particularly   interested in deep generative models, graph neural networks, and geometric deep learning.",
         "useful_links": [{"name": "RefineGNN", "link": "https://arxiv.org/pdf/2110.04624.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/uDTccbg_Ai4",
+        "recording": "https://www.youtube.com/embed/uDTccbg_Ai4",
+        "recording_id": "uDTccbg_Ai4",
         "slides": "https://drive.google.com/file/d/18IBPzowIUMbT4dX6N1WSRPqWRx6oTdOx/view?usp=sharing",
         "cancelled": false
     },
@@ -371,7 +384,8 @@ window.event_data = {
         "bio": "Clemens is a third-year PhD student in the group of Prof. Gisbert Schneider at   ETH Zurich and currently doing an internship in the Computer-Assisted Drug   Design group at Novartis. After his undergraduate studies in Chemical Engineering,   he first got into cheminformatics and machine learning during his master thesis at   MIT working with Connor Coley and Klavs F. Jensen. Clemens’ research interests   lie in exploring how quantum mechanical calculations can be used in the drug discovery process.",
         "useful_links": [{"name": "QMugs", "link": "https://arxiv.org/abs/2107.00367"},
                          {"name": "DelFTa", "link": "https://chemrxiv.org/engage/chemrxiv/article-details/61c02f7e7f367e306759a0fd"}],
-        "recording": "https://www.youtube-nocookie.com/embed/4eyh3GhhvHg",
+        "recording": "https://www.youtube.com/embed/4eyh3GhhvHg",
+        "recording_id": "4eyh3GhhvHg",
         "slides": "https://drive.google.com/file/d/19qh1puEktphwDHI1GAdeWn34pB7NRWyt/view?usp=sharing",
         "cancelled": false
     },
@@ -386,7 +400,8 @@ window.event_data = {
         "useful_links": [{"name": "EquiDock", "link": "https://arxiv.org/abs/2111.07786"},
                         {"name": "EquiBind", "link": "https://arxiv.org/abs/2202.05146"},
                         {"name": "GeoMol", "link": "https://proceedings.neurips.cc/paper/2021/file/725215ed82ab6306919b485b81ff9615-Paper.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/706KjyR-wyQ",
+        "recording": "https://www.youtube.com/embed/706KjyR-wyQ",
+        "recording_id": "706KjyR-wyQ",
         "slides": "",
         "cancelled": false
     },
@@ -400,7 +415,8 @@ window.event_data = {
         "bio": "Paul Bertin  is a third year PhD student at Mila, advised by Yoshua Bengio. He received his   Masters degree in Applied Mathematics from the ENS Paris-Saclay under the supervision of   Stanley Durrleman and Nicolas Renier, working on 3D embedded graphs to better understand the   organization of brain vessel networks. His current research seeks to develop   machine learning methods for predicting the response of cells to perturbations: chemicals or biologics. He is especially   interested in taking inspiration from the causal inference literature, as well as Cell biology.",
         "useful_links": [{"name": "RECOVER", "link": "https://arxiv.org/abs/2202.04202"},
                          {"name": "Github", "link": "https://github.com/RECOVERcoalition/Recover"}],
-        "recording": "https://www.youtube-nocookie.com/embed/zWldQSYG1gQ",
+        "recording": "https://www.youtube.com/embed/zWldQSYG1gQ",
+        "recording_id": "zWldQSYG1gQ",
         "slides": "https://drive.google.com/file/d/1pOB0ATMXgetRhQ1i3oIDz9qhfkhKJs13/view?usp=sharing",
         "cancelled": false
     },
@@ -414,7 +430,8 @@ window.event_data = {
         "bio": "Moksh is a graduate student at Mila and the University of Montreal, where he is supervised   by Prof. Yoshua Bengio. His is interested in developing deep learning methods for sequential   decision making, and their applications for scientific discovery. Before joining Mila, he   spent a year working on resource efficient machine learning methods at Microsoft, after   graduating with a bachelor\'s degree from NITK Surathkal.",
         "useful_links": [{"name": "DEUP", "link": "https://arxiv.org/pdf/2102.08501.pdf"},
                          {"name": "AMP Design", "link": "https://arxiv.org/pdf/2203.04115.pdf"}],
-        "recording": "https://www.youtube-nocookie.com/embed/TIZ2FyLi_3o",
+        "recording": "https://www.youtube.com/embed/TIZ2FyLi_3o",
+        "recording_id": "TIZ2FyLi_3o",
         "slides": "https://drive.google.com/file/d/1bdU0mVzcr646YNdY0klx6kiwHeJ6woun/view?usp=sharing",
         "cancelled": false
     },
@@ -426,8 +443,12 @@ window.event_data = {
         "day": 22,
         "abstract": "In this talk, I will explain how to empower graph neural networks (GNNs) for molecular property   prediction with more expressive models and large datasets. Graph neural networks (GNNs) have   emerged as one of the most important innovations for machine learning in drug discovery.   Their ability to work on unstructured data enables us to use deep learning on molecular graphs,   with the promise of predicting molecular properties with the same speed and accuracy that   convolutional networks process images. However, GNNs face unprecedented challenges that I   address in the talk, including the difficulty of detecting sub-structures, modeling non-covalent   interactions, and the lack of large datasets.",
         "bio": "Dominique is a lead researcher at Valence Discovery, an adjunct professor at the University   of Montreal, and an associate industry member at Mila. He has led various projects meant to   improve the expressiveness of graph neural networks and is leading the development of   large-scale models for chemistry at Valence Discovery.",
-        "useful_links": [],
-        "recording": "",
+        "useful_links": [{"name": "PNA", "link": "https://proceedings.neurips.cc/paper/2020/file/99cad265a1768cc2dd013f0e740300ae-Paper.pdf"},
+                         {"name": "DGN", "link": "http://proceedings.mlr.press/v139/beaini21a/beaini21a.pdf"},
+                         {"name": "SAN", "link": "https://proceedings.neurips.cc/paper/2021/file/b4fd1d2cb085390fbbadae65e07876a7-Paper.pdf"},
+                         ],
+        "recording": "https://www.youtube.com/embed/jrVXJykB8qc",
+        "recording_id": "",
         "slides": "",
         "cancelled": false
     },
@@ -441,6 +462,7 @@ window.event_data = {
         "bio": "",
         "useful_links": [],
         "recording": "",
+        "recording_id": "",
         "slides": "",
         "cancelled": true
     },
@@ -450,10 +472,12 @@ window.event_data = {
         "year": 2022,
         "month": 5,
         "day": 3,
-        "abstract": "",
-        "bio": "",
-        "useful_links": [],
+        "abstract": "Machine learning has become a crucial tool in drug discovery and chemistry at large, e.g. to predict molecular properties, such as bioactivity, with high levels of accuracy. However, activity cliffs – pairs of molecules that are highly similar in their structure but exhibit large differences in potency – have been underinvestigated for their effect on model performance. Not only are these edge cases informative for molecule discovery and optimization, but models that are well-equipped to accurately predict the potency of activity cliffs have an increased potential for prospective applications. Our work aims to fill the current knowledge gap on best practice machine learning methods in the presence of activity cliffs. We benchmarked more than 20 machine and deep learning approaches on curated bioactivity data from 30 macromolecular targets for their performance on activity cliff compounds. While all methods struggled in the presence of activity cliffs, machine learning approaches based on molecular descriptors outperformed more complex deep learning methods. These results advocate for (a) the inclusion of dedicated “activity-cliff-centered” metrics during model development and evaluation, and (b) the development of novel algorithms to better predict the properties of activity cliff. To this end, the methods, metrics, and results of this study have been encapsulated into an open access benchmarking platform named MoleculeACE. MoleculeACE is designed to steer the community towards addressing the pressing but overlooked limitation of molecular machine learning models posed by activity cliffs.",
+        "bio": "Derek van Tilborg is a PhD candidate in the molecular machine learning group at the Eindhoven University of Technology. He primarily works on applying graph neural networks for drug discovery. By leveraging his academic background in both biomedical sciences and bioinformatics, he works on bridging the gap between computational methods and preclinical experiments.",
+        "useful_links": [{"name": "Paper", "link": "https://chemrxiv.org/engage/chemrxiv/article-details/623de3fbab0051148698fbcf"},
+                         {"name": "MoleculeACE", "link": "https://github.com/molML/MoleculeACE"}, ],
         "recording": "",
+        "recording_id": "",
         "slides": "",
         "cancelled": false
     },
@@ -467,19 +491,21 @@ window.event_data = {
         "bio": "",
         "useful_links": [],
         "recording": "",
+        "recording_id": "",
         "slides": "",
         "cancelled": false
     },
     {
-        "title": "Prediction of stable ternary complexes",
+        "title": "Bayesian Optimization for Ternary Complex Prediction",
         "speaker": "Noah Weber",
         "year": 2022,
         "month": 5,
         "day": 17,
-        "abstract": "",
-        "bio": "",
+        "abstract": "Proximity-inducing compounds (PICs) are an emergent drug technology through which the protein of interest (POI) is brought into the vicinity of proteins that control various cellular processes, giving rise to therapeutic benefits. One of the best-known PICs examples are heterobifunctional molecules known as proteolysis targeting chimeras (PROTACs), which induce protein degradation by establishing proximity between a POI and an E3 ligase. In silico PROTAC discovery requires computationally predicting the ternary complex consisting of POI, PROTAC molecule, and E3 ligase. To date, however, all of the approaches for modeling ternary complexes have not been both effective and computationally fast enough. We present a novel machine learning-based method for predicting PROTAC-mediated ternary complex structures based on Bayesian optimization. We show how a fitness combining an estimation of proteinprotein interactions with PROTAC energy allows to find good candidate structures. Our method furthermore includes novel refinement and filtering steps taking into account PROTAC stability and protein interaction restraints. An evaluation of our method using DockQ scores shows that it is able to generate candidates which are close to the native structure for known ternary complexes. Futhermore, our method is computationally inexpensive and can rapidly screen many different PROTACs, a requirement for practical usage of ternary complex prediction.",
+        "bio": "Noah Weber serves as Chief Technology Officer at Celeris Therapeutics. He is a Kaggle Grandmaster and adjunct lecturer at the Vienna University of Technology and the Vienna University of Applied Sciences.",
         "useful_links": [],
         "recording": "",
+        "recording_id": "",
         "slides": "",
         "cancelled": false
     }
@@ -507,7 +533,7 @@ var today = new Date()
 for(var i=0; i<event_data["events"].length; i++) {
     var event = event_data["events"][i];
     var event_date = new Date(event["year"], event["month"] - 1, event["day"])
-    if(event_date < today) {
+    if((event_date < today) &&  !event["cancelled"] && event["recording"] !== "") {
         event["date"] = "Tue " + months[event["month"]-1] + " " + event["day"] + ", " + event["year"];
         past_events.push(event);
     }

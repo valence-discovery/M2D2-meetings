@@ -33,6 +33,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"-->
+<!--          integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="-->
+<!--          crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+
   </head>
   <body>
 
@@ -280,36 +284,46 @@
 
         <div id="app" class="row owl-carousel owl-theme">
           <div v-for="(meeting, index) in pastEvents">
-            <div class="blog-item">
-              <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/706KjyR-wyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
-              </div>
-              <div class="descr" :id="`heading${index}`" data-toggle="collapse" :data-target="`#videocollapse${index}`"
-                     aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
-                  <b class="title" v-text="meeting.speaker"></b>
-                  <p v-text="meeting.title"></p>
-                    <p id="vvvtitle_and_speaker"></p>
-                  <!-- <a class="false-link">(More)</a> -->
-              </div>
+            <div class="row align-items-top">
+                <div class="col-sm-6 blog-item">
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" width="100%" height="200px" :src="meeting.recording"
+                              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+                              allowfullscreen></iframe>
+                  </div>
+<!--                    &lt;!&ndash; 1. Video Wrapper Container &ndash;&gt;-->
+<!--                  <div class="embed-youtube" :data-video-id="meeting.recording_id">-->
+<!--                    &lt;!&ndash; 2. The preview button that will contain the Play icon &ndash;&gt;-->
+<!--                    <div class="embed-youtube-play"></div>-->
+<!--                  </div>-->
+                  <div class="descr" :id="`heading${index}`"
+                         aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
+                      <b class="title" v-text="meeting.speaker"></b>
+                      <p v-text="meeting.title"></p>
+                  </div>
 
-              <div :id="`videocollapse${index}`" class="collapse hide" :aria-labelledby="`heading${index}`" data-parent="#accordion">
-                  <!-- <p><b>Abstract:</b> <div v-text="meeting.abstract" style="padding: 2px;"></div>
+                  <div class="meta-tags">
+                      <span class="date" ><i class="lni-calendar"></i><span v-text="meeting.date"></span></span>
+                  </div>
+              </div>
+              <div class="col-sm-6" >
+                  <p><b>Abstract:</b> <div style="font-size:12px; text-align:justify;" v-text="meeting.abstract" ></div>
                   </p></br>
 
-                  <p><b>Bio:</b> <div v-text="meeting.bio"></div>
-                  </p></br> -->
+                  <p><b>Bio:</b> <div style="font-size:12px; text-align:justify;" v-text="meeting.bio"></div>
+                  </p></br>
                   <p>
                       <b>Useful links:</b>
-                      <a :href="link.link" v-for="link in meeting.useful_links"><span class="mx-2"><i class="lni-empty-file mr-1"></i><span v-text="link.name"></span></span></a>
-                  </p>
-              </div>
+                      <a :href="meeting.slides"><span class="mx-2"><i class="lni-empty-file mr-1"></i>Talk Slides</span></a>
+                      <a :href="link.link" v-for="link in meeting.useful_links">, <span class="mx-2"><i class="lni-empty-file mr-1"></i><span v-text="link.name"></span></span></a>
+                      </br>
 
-              <div class="meta-tags">
-                  <span class="date" ><i class="lni-calendar"></i><span v-text="meeting.date"></span></span>
+                  </p>
               </div>
             </div>
           </div>
         </div>
+
         <div style="margin-top: 10px;" class="col-12 text-center">
           <a href="https://youtube.com/playlist?list=PLoVkjhDgBOt11Q3wu8lr6fwWHn5Vh3cHJ" class="btn btn-common">View all recorded talks</a>
         </div>
@@ -441,9 +455,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
             integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--    <script src="assets/js/yt_embed.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.3.1/lazyload.min.js"-->
+<!--            integrity="sha512-lVcnjCLGjJTaZU55wD7H3f8SJVi6VV5cQRcmGuYcyIY607N/rzZGEl90lNgsiEhKygATryG/i6e5u2moDFs5kQ=="-->
+<!--            crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 
 
-    
     <!-- Form handler -->
     <script>
       const scriptURL =
@@ -477,19 +494,30 @@
         }
       }).mount('#app')
 
-      $('.owl-carousel').owlCarousel({
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:1,
         loop:true,
-        margin: 10,
-        responsiveClass:true,
-        responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          }
-        }
+        margin: 25,
+        nav: true,
+        dots: false,
+        autoHeight: true,
+        navText : ['<i class="prev_video fa fa-angle-left" aria-hidden="true"></i>','<i class="next_video fa fa-angle-right" aria-hidden="true"></i>']
       });
+    </script>
+
+    <script>
+        // Set the options globally
+        // to make LazyLoad self-initialize
+        window.lazyLoadOptions = {
+            // Your custom settings go here
+        };
+
+        // Listen to the initialization event
+        // and get the instance of LazyLoad
+        window.addEventListener("LazyLoad::Initialized", function (event) {
+            window.lazyLoadInstance = event.detail.instance;
+        }, false);
     </script>
 
   </body>
