@@ -130,26 +130,27 @@
             <div class="card next-event-card">
 	      <div class="card-header text-center font-weight-bold">Next Talk</div>
               <div class="card-header text-center" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
-                  Learning 3D Representations of Molecular Chirality with Invariance to Bond Rotations - <b>Keir Adams</b></br>
+                  Bayesian Optimization for Ternary Complex Prediction - <b>Noah Weber</b></br>
                 <a class="false-link">(Click here for more information)</a></p>
               </div>
 
               <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <p><b>Abstract:</b>
-                        Molecular stereochemistry strongly alters (bio)chemical interactions yet is often neglected in molecular deep learning. Tetrahedral (point) chirality, a form of stereochemistry describing relative spatial arrangements of bonded neighbors around tetrahedral carbon centers, especially influences substrate-catalyst binding and is therefore critical for pharmaceutical drug design and asymmetric catalysis. However, because chirality influences the set of 3D conformers accessible to the molecule without changing its 2D graph connectivity, modern graph neural networks (GNNs) designed for molecular property prediction often ignore chirality in their learned molecular representations. Most 2D GNNs at best use atomic labels to naïvely treat chirality, while E(3)-invariant 3D GNNs are invariant to chirality altogether.</br></br>
+                        Proximity-inducing compounds (PICs) are an emergent drug technology through which the protein of interest (POI) is brought into the vicinity of proteins that control various cellular processes, giving rise to therapeutic benefits. One of the best-known PICs examples are heterobifunctional molecules known as proteolysis targeting chimeras (PROTACs), which induce protein degradation by establishing proximity between a POI and an E3 ligase. In silico PROTAC discovery requires computationally predicting the ternary complex consisting of POI, PROTAC molecule, and E3 ligase. To date, however, all of the approaches for modeling ternary complexes have not been both effective and computationally fast enough.
                         
-                        To enable representation learning on molecules with defined chirality, we design an SE(3)-invariant neural network model that specially processes torsion angles of a 3D molecular conformer. We explicitly model conformational flexibility by integrating a novel type of invariance to rotations about internal molecular bonds directly into the neural architecture, mitigating the need for multi-conformer data augmentation. We showcase our model on four benchmarks: contrastive learning to distinguish conformers of different stereoisomers in a learned latent space, classification of chiral centers as R/S, prediction of how enantiomers rotate circularly polarized light, and ranking enantiomers by their docking scores in an enantiosensitive protein pocket. We compare our model, Chiral InterRoto-Invariant Neural Network (ChIRo), with 2D and 3D GNNs to demonstrate that ChIRo achieves state of the art performance when learning chiral-sensitive functions from molecular structures. We envision that our work, alongside future efforts to explicitly model other forms of chirality, will expand the capacity of deep learning to advance enantioselective reaction optimization, 3D drug design, and stereochemical property prediction.
+                        We present a novel machine learning-based method for predicting PROTAC-mediated ternary complex structures based on Bayesian optimization. We show how a fitness combining an estimation of protein-protein interactions with PROTAC energy allows to find good candidate structures. Our method furthermore includes novel refinement and filtering steps taking into account PROTAC stability and protein interaction restraints. An evaluation of our method using DockQ scores shows that it is able to generate candidates which are close to the native structure for known ternary complexes. Futhermore, our method is computationally inexpensive and can rapidly screen many different PROTACs, a requirement for practical usage of ternary complex prediction.
                     </p></br>
 
                     <p><b>Bio:</b>
-                        Keir Adams is a 2nd year PhD candidate advised by Prof. Connor W. Coley in the Department of Chemical Engineering and the Center for Computational Science and Engineering at Massachusetts Institute of Technology. His research interests center on improving 3D representations of molecules in neural architectures, with an emphasis on molecular chirality, shape, and sterics. He seeks to apply 3D representation learning and deep generative modeling to enable new machine learning approaches in drug design and chemical catalysis.
+                        Noah Weber serves as Chief Technology Officer at Celeris Therapeutics. He is a Kaggle Grandmaster and adjunct lecturer at the Vienna University of Technology and the Vienna University of Applied Sciences.
                     </p></br>
-                    <p>
+                    
+                    <!--<p>
                         <b>Useful links:</b>
-                       <a href="https://arxiv.org/abs/2110.04383"><span class="mx-2"><i class="lni-empty-file mr-1"></i>Paper</span></a>
-                       <!--<a href="https://github.com/molML/MoleculeACE"><span class="mx-2"><i class="lni lni-github-original mr-1"></i>MoleculeACE</span></a>-->
-                    </p>
+                        <a href="https://arxiv.org/abs/2110.04383"><span class="mx-2"><i class="lni-empty-file mr-1"></i>Paper</span></a>
+                       <a href="https://github.com/molML/MoleculeACE"><span class="mx-2"><i class="lni lni-github-original mr-1"></i>MoleculeACE</span></a>
+                    </p>-->
                 </div>
               </div>
               <div class='card-footer text-center'>
