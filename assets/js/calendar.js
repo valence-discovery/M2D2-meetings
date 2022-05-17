@@ -373,7 +373,79 @@ var event_data = {
         "month": 5,
         "day": 17,
         "cancelled": false
-    }
+    },
+    {
+        "title": "Improving Few- and Zero-Shot Reaction Template Prediction Using Modern Hopfield Networks",
+        "speaker": "Philipp Seidl",
+        "year": 2022,
+        "month": 5,
+        "day": 24,
+        "cancelled": false
+    },
+    {
+        "title": "Data-Efficient Graph Grammar Learning for Molecular Generation",
+        "speaker": "Minghao Guo",
+        "year": 2022,
+        "month": 5,
+        "day": 31,
+        "cancelled": false
+    }, 
+    {
+        "title": "TorsionNet: A Deep Neural Network to Rapidly Predict SmallMolecule Torsional Energy Profiles with the Accuracy of Quantum Mechanics",
+        "speaker": "Brajesh K. Rai",
+        "year": 2022,
+        "month": 6,
+        "day": 7,
+        "cancelled": false
+    },
+    {
+        "title": "Multi-Scale Representation Learning on Proteins",
+        "speaker": "Charlotte Bunne",
+        "year": 2022,
+        "month": 6,
+        "day": 14,
+        "cancelled": false
+    }, 
+    {
+        "title": "Leveraging nonstructural data to predict structures and affinities of protein–ligand complexes",
+        "speaker": "Joeseph M. Paggi",
+        "year": 2022,
+        "month": 6,
+        "day": 21,
+        "cancelled": false
+    }, 
+    {
+        "title": "Bayesynergy: flexible Bayesian modelling of synergistic interaction effects in in vitro drug combination experiments",
+        "speaker": "Leiv Rønneberg",
+        "year": 2022,
+        "month": 7,
+        "day": 5,
+        "cancelled": false
+    }, 
+    {
+        "title": "Explaining, Evaluating and Enhancing Neural Networks’ Learned Representations",
+        "speaker": "Marco Bertolini",
+        "year": 2022,
+        "month": 7,
+        "day": 12,
+        "cancelled": false
+    }, 
+    {
+        "title": "Molecule Generation in 3D with Equivariant Diffusion",
+        "speaker": "Emiel Hoogeboom",
+        "year": 2022,
+        "month": 7,
+        "day": 26,
+        "cancelled": false
+    }, 
+    {
+        "title": "A deep learning framework for high-throughput mechanism-driven phenotype compound screening and drug repurposing",
+        "speaker": "Lei Xie",
+        "year": 2022,
+        "month": 8,
+        "day": 2,
+        "cancelled": false
+    }, 
     ]
 };
 
