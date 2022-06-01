@@ -396,7 +396,7 @@ var event_data = {
         "year": 2022,
         "month": 6,
         "day": 7,
-        "cancelled": false
+        "cancelled": true
     },
     {
         "title": "Multi-Scale Representation Learning on Proteins",
