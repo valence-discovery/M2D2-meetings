@@ -391,14 +391,6 @@ var event_data = {
         "cancelled": false
     }, 
     {
-        "title": "TorsionNet: A Deep Neural Network to Rapidly Predict SmallMolecule Torsional Energy Profiles with the Accuracy of Quantum Mechanics",
-        "speaker": "Brajesh K. Rai",
-        "year": 2022,
-        "month": 6,
-        "day": 7,
-        "cancelled": true
-    },
-    {
         "title": "Multi-Scale Representation Learning on Proteins",
         "speaker": "Charlotte Bunne",
         "year": 2022,
