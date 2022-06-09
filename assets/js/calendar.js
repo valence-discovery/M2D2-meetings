@@ -391,7 +391,7 @@ var event_data = {
         "cancelled": false
     }, 
     {
-        "title": "Multi-Scale Representation Learning on Proteins",
+        "title": "Optimal Transport Modeling of Population Dynamics: Applications in Single-Cell Biology",
         "speaker": "Charlotte Bunne",
         "year": 2022,
         "month": 6,
