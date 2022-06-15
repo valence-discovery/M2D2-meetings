@@ -400,7 +400,7 @@ var event_data = {
     }, 
     {
         "title": "Leveraging nonstructural data to predict structures and affinities of protein–ligand complexes",
-        "speaker": "Joeseph M. Paggi",
+        "speaker": "Joseph M. Paggi",
         "year": 2022,
         "month": 6,
         "day": 21,
