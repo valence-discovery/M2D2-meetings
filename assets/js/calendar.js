@@ -399,7 +399,7 @@ var event_data = {
         "cancelled": false
     }, 
     {
-        "title": "Leveraging nonstructural data to predict structures and affinities of protein–ligand complexes",
+        "title": "Integrating structure-based and ligand-based modeling for drug design",
         "speaker": "Joseph M. Paggi",
         "year": 2022,
         "month": 6,
