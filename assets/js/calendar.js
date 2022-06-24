@@ -407,6 +407,14 @@ var event_data = {
         "cancelled": false
     }, 
     {
+        "title": "A hands-on introduction to ML for drug discovery",
+        "speaker": "Various",
+        "year": 2022,
+        "month": 6,
+        "day": 28,
+        "cancelled": false
+    }, 
+    {
         "title": "Bayesynergy: flexible Bayesian modelling of synergistic interaction effects in in vitro drug combination experiments",
         "speaker": "Leiv Rønneberg",
         "year": 2022,
