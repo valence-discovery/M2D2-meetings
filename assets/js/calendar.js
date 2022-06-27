@@ -407,7 +407,7 @@ var event_data = {
         "cancelled": false
     }, 
     {
-        "title": "A hands-on introduction to ML for drug discovery",
+        "title": "Three open-source initiatives to get you started with AI in drug discovery",
         "speaker": "Various",
         "year": 2022,
         "month": 6,
