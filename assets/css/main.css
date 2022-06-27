@@ -2042,7 +2042,7 @@ h1 {
 
 .list-unstyled li {
   margin-top: 10px;
-  color: #dc3545 !important;
+  padding-left: 40px;
 }
 
 .text-danger {
