@@ -415,7 +415,7 @@ var event_data = {
         "cancelled": false
     }, 
     {
-        "title": "Bayesynergy: flexible Bayesian modelling of synergistic interaction effects in in vitro drug combination experiments",
+        "title": "Bayesian modelling of synergistic drug combination effects in cancer using Gaussian Processes",
         "speaker": "Leiv Rønneberg",
         "year": 2022,
         "month": 7,
