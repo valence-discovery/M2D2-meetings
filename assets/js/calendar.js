@@ -423,29 +423,13 @@ var event_data = {
         "cancelled": false
     }, 
     {
-        "title": "Explaining, Evaluating and Enhancing Neural Networks’ Learned Representations",
+        "title": "Beyond Atoms and Bonds: Contextual Explanability via Molecular Graphical Depictions",
         "speaker": "Marco Bertolini",
         "year": 2022,
         "month": 7,
         "day": 12,
         "cancelled": false
-    }, 
-    {
-        "title": "Molecule Generation in 3D with Equivariant Diffusion",
-        "speaker": "Emiel Hoogeboom",
-        "year": 2022,
-        "month": 7,
-        "day": 26,
-        "cancelled": false
-    }, 
-    {
-        "title": "A deep learning framework for high-throughput mechanism-driven phenotype compound screening and drug repurposing",
-        "speaker": "Lei Xie",
-        "year": 2022,
-        "month": 8,
-        "day": 2,
-        "cancelled": false
-    }, 
+    }
     ]
 };
 
