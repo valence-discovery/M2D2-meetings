@@ -423,7 +423,7 @@ var event_data = {
         "cancelled": false
     }, 
     {
-        "title": "Beyond Atoms and Bonds: Contextual Explanability via Molecular Graphical Depictions",
+        "title": "Beyond Atoms and Bonds: Contextual Explainability via Molecular Graphical Depictions",
         "speaker": "Marco Bertolini",
         "year": 2022,
         "month": 7,
