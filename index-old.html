@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>M2D2 - Molecular Modeling and Drug Discovery</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Timeline Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/calendar.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Favicons and similar -->
+    <link href="https://assets.website-files.com/5ffb54870e826a46069b3ab3/603c238893f850739b72f85e_favicon%4032w.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://assets.website-files.com/5ffb54870e826a46069b3ab3/603c238c9664717f3cdd5ba9_favicon%40256.png" rel="apple-touch-icon">
+    
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a href="index.html" class="navbar-brand">M<sub>2</sub>D<sub>2</sub></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header-wrap">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#schedules">
+                  Schedule
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">
+                  Latest Talks
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-map">
+                  Subscribe
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-sm-12">
+              <div class="contents text-center">
+                <div class="mx-auto mb-4">
+                  <img class="mx-2 w-25" src="assets/img/logo/logo_mila.png" width="40%"/>
+                  <img class="mx-2 w-25" src="assets/img/logo/logo_valence.png" width="40%"/>
+                </div>
+                <p class="banner-info">Tuesdays at 10:00 a.m. Eastern Time (ET)</p>
+                <h2 class="head-title">M<sub>2</sub>D<sub>2</sub>: Molecular Modeling and </br>Drug Discovery</h2>
+                <p class="banner-desc">
+                    Organized by
+                    <a href="https://linkedin.com/in/prudencio-tossou">Prudencio Tossou </a>,
+                    <a href="https://linkedin.com/in/therence-bois-23b99157/">Therence Bois</a>, and
+                    <a href="https://www.linkedin.com/in/caswognum/">Cas Wognum</a><br>
+                </p>
+                <div class="banner-btn">
+                  <!-- Button code -->
+                    <a href="#contact-map" title="Join our Mailing List" class="slackbutton mb-2">
+                        <b> Join our Mailing List </b>
+                    </a>
+                    <a href="https://join.slack.com/t/m2d2group/shared_invite/zt-16w1rjqqs-n81TiK~iB23XbZ0QWMYs~A" title="Join our slack" class="slackbutton mb-2">
+                        <b> Join our Slack </b>
+                    </a>
+                    <div title="Add to Calendar" class="addeventatc mb-2">
+                        &nbsp &nbsp Add to Calendar
+                        <span id="cal_start" class="start"></span>
+                        <span id="cal_end" class="end"></span>
+                        <span class="timezone">America/Toronto</span>
+                        <span class="title">M<sub>2</sub>D<sub>2</sub> - Molecular Modeling and Drug Discovery </span>
+                        <span class="description">Weekly M<sub>2</sub>D<sub>2</sub> meeting. More info on our website https://valence-discovery.github.io/M2D2-meetings/.</span>
+                        <span class="location">Online event</span>
+                        <span class="recurring">FREQ=WEEKLY;INTERVAL=1;COUNT=55</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+    
+    <!-- Count Bar Start -->
+    <section id="count">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="card next-event-card">
+	      <div class="card-header text-center font-weight-bold">Next Talk</div>
+              <div class="card-header text-center" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
+                We are taking a short break to prepare for season 2!</br>
+                <a class="false-link">(Click here for more information)</a></p>
+              </div>
+
+              <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <p>We reached the end of Season 1 for the M2D2 talks. Thank you so much for participating in this community and we hope you enjoyed the topics that were covered! We will be taking a few weeks to plan and prepare for <b>Season 2 which will launch in early September</b>. If you have any recommended speakers or topics that you’d like us to include, please submit your preferences through the <a href="https://forms.gle/7pSGLtdNeEUkjVrs5">feedback survey</a>!</p>
+                </div>
+              </div>
+              <div class='card-footer text-center'>
+                <span class='date mx-2'><i class='lni-calendar mr-2'></i>Early September</span>
+                <a href="https://zoom.us/j/98629809897?pwd=WkJWVkFhQmYxMVp1akFVcmFEMEIvUT09"><span class='date mx-2'><i class='lni-video mr-2'></i>Join the Zoom call</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Count Bar End -->
+    
+    <!-- About Section Start -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 d-none d-lg-inline p-4">
+            <div class="img-thumb">
+              <img class="img-fluid" src="assets/img/about/img2.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="about-content">
+              <div>
+                <div class="about-text">  
+                  <h2>About M<sub>2</sub>D<sub>2</sub></h2>
+                  <p>Welcome to this space dedicated to the M<sub>2</sub>D<sub>2</sub> Talks co-organized by Valence Discovery and Mila - Quebec AI Institute.</p>
+                  <p>From applied research papers to open source projects, we’re hoping to use these talks to help demystify AI for drug discovery and make the field more accessible for newcomers. M2D2 will bring our vibrant AI & drug discovery communities together and spark new perspectives, provoke discussions, and offer a safe space to share new ideas.</p>
+                  <p>A wide range of drug discovery related topics will be covered reflecting the vibrant diversity of tools and methodologies in the community:</p>
+                </div>
+                <ul class="stylish-list mb-3">
+                  <li><i class="lni-check-mark-circle"></i>Applications of ML in computational molecular design</li>
+                  <li><i class="lni-check-mark-circle"></i>Representation learning for small- and macromolecules</li>
+                  <li><i class="lni-check-mark-circle"></i>Prediction of molecular properties and bioactivities</li>
+                  <li><i class="lni-check-mark-circle"></i>ML for quantum chemistry and molecular dynamics</li>
+                  <li><i class="lni-check-mark-circle"></i>Generative models for de novo molecular design</li>
+                  <li><i class="lni-check-mark-circle"></i>Multiparameter optimization and compound selection</li>
+                  <li><i class="lni-check-mark-circle"></i>Interpretable and explainable activity models</li>
+                  <li><i class="lni-check-mark-circle"></i>Reaction prediction, retrosynthesis, and synthesis planning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Schedule Section Start -->
+    <section id="schedules" class="schedule section-padding">
+		<div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="section-title-header text-center">
+                    <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Schedule</h2>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s">Please
+                        <a href="mailto:prudencio@valencediscovery.com?cc=cas@valencediscovery.com&amp;subject=[M2D2]%20Interested%20in%20presenting">reach out</a>
+                        if you would like to present at an upcoming event.
+                    </p>
+                </div>
+                    <div class="content w-100">
+
+                    <div class="calendar-container">
+                      <div class="calendar"> 
+                        <div class="year-header"> 
+                          <span class="left-button fa fa-chevron-left" id="prev"> </span> 
+                          <span class="year-month" id="label"></span>
+                          <span class="right-button fa fa-chevron-right" id="next"> </span>
+                        </div> 
+                        <table class="months-table w-100"> 
+                          <tbody>
+                            <tr class="months-row">
+                              <td class="month">Jan</td> 
+                              <td class="month">Feb</td> 
+                              <td class="month">Mar</td> 
+                              <td class="month">Apr</td> 
+                              <td class="month">May</td> 
+                              <td class="month">Jun</td> 
+                              <td class="month">Jul</td>
+                              <td class="month">Aug</td> 
+                              <td class="month">Sep</td> 
+                              <td class="month">Oct</td>          
+                              <td class="month">Nov</td>
+                              <td class="month">Dec</td>
+                            </tr>
+                          </tbody>
+                        </table> 
+                        
+                        <table class="days-table w-100"> 
+                          <td class="day">Sun</td> 
+                          <td class="day">Mon</td> 
+                          <td class="day">Tue</td> 
+                          <td class="day">Wed</td> 
+                          <td class="day">Thu</td> 
+                          <td class="day">Fri</td> 
+                          <td class="day">Sat</td>
+                        </table> 
+                        <div class="frame"> 
+                          <table class="dates-table w-100"> 
+                          <tbody class="tbody">     
+                          </tbody> 
+                          </table>
+                        </div> 
+                      </div>
+                    </div>
+                    <div class="events-container text-center p-3">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Schedule Section End -->
+    <!-- Blog Section Start -->
+    <section id="blog" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Latest Recorded Talks</h2>
+                <p class="wow fadeInDown" data-wow-delay="0.2s">Whenever possible, slides and videos will be available after each talk.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="blog-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/ZwpBxhGZpKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                    </div>
+                    <div class="descr">
+                        <b class="title">Marco Bertolini</b>
+                        <p>Beyond Atoms and Bonds: Contextual Explainability via Molecular Graphical Depictions</p>
+                    </div>
+                    <div class="meta-tags">
+                        <span class="date"><i class="lni-calendar"></i> Tue July 12, 2022</span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="blog-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/DHAOCNUhqeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                    </div>
+                    <div class="descr">
+                        <b class="title">Leiv Rønneberg</b>
+                        <p>Bayesian modelling of synergistic drug combination effects in cancer using GPs</p>
+                    </div>
+                    <div class="meta-tags">
+                        <span class="date"><i class="lni-calendar"></i> Tue July 05, 2022</span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="blog-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/kBL3tB6cVlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                    </div>
+                    <div class="descr">
+                        <b class="title">Various speakers</b>
+                        <p>Three open-source initiatives to get you started with AI in drug discovery</p>
+                    </div>
+                    <div class="meta-tags">
+                        <span class="date"><i class="lni-calendar"></i> Tue June 28, 2022</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+          <a href="https://youtube.com/playlist?list=PLoVkjhDgBOt11Q3wu8lr6fwWHn5Vh3cHJ" class="btn btn-common">View all recorded talks</a>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
+    <!-- Contact Us Section -->
+    <section id="contact-map" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Keep In Touch</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Please fill the form below to receive reminders and updates from this group.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="form-wrapper">
+                <form role="form" method="post" id="contactForm" name="submit-to-google-sheet" data-toggle="validator" onsubmit="alert('Thank you for subscribing. We will be in touch.')">
+                  <div class="row">
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="First Name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                    </div>
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="institution" name="institution" placeholder="Institution" required data-error="Please enter your associated institution">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <select class="form-control form-select" name="position" id="position">
+                          <option value="Student" selected>Student</option>
+                          <option value="Academic researcher">
+                            Academic researcher
+                          </option>
+                          <option value="Industry researcher">
+                            Industry researcher
+                          </option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-submit">
+                        <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Subscribe</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="footer-logo">
+              M<sub>2</sub>D<sub>2</sub>
+            </div>
+            <div class="social-icons-footer">
+              <ul>
+                <li class="twitter"><a target="_blank" href="https://twitter.com/valence_ai"><i class="lni-twitter-filled"></i></a></li>
+                <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/valence-discovery"><i class="lni-linkedin-filled"></i></a></li>
+              </ul>
+            </div>
+            <div class="site-info">
+              <p>Based on the template designed and developed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+
+    <div id="preloader">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/add_to_calendar.js?v=2"></script>
+    <script src="assets/js/calendar.js?v=3"></script>
+    <script src="assets/js/main.js"></script>   
+    
+    <!-- Form handler -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwdYqs5hDfyXOE2CK-X7GgifUuVMl_0_8IfVVZ65sjnPoaMGQCK-X67eZozzk7tsz84/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+        form.reset();
+      });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVKJBSLG70"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RVKJBSLG70');
+    </script>
+
+  </body>
+</html>
